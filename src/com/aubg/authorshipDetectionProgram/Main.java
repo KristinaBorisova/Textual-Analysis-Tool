@@ -1,8 +1,8 @@
-package com.aubg;
+package com.aubg.authorshipDetectionProgram;
 
 public class Main {
 
     public static void main(String[] args) {
-	System.out.println("Here we go again!");
+	new Manager();
     }
 }
