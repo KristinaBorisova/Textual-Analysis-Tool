@@ -1,4 +1,4 @@
-package com.aubg.core;
+package com.aubg.authorshipDetectionProgram.core;
 
 public class Manager {
 
