@@ -1,5 +1,7 @@
 package com.aubg.authorshipDetectionProgram.ui;
 
+import java.io.IOException;
+
 public class UiManagerImpl implements UiManager {
     private final ConsoleMessages msgManager;
 
@@ -9,10 +11,14 @@ public class UiManagerImpl implements UiManager {
 
     @Override
     public String[] getTextFromUser() throws IOException {
-        msgManager.displayMenu();
-        String[] text;
-       // get text from user
-        // return text
+        showUserActionMenu ();
+        //get text from user
+        String textValue[] = {"some text for testing purposes", "here"};
+        return textValue;
+    }
+
+    private void showUserActionMenu() {
+        msgManager.displayMenu ();
     }
 
 }
