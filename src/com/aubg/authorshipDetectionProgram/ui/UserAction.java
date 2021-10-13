@@ -1,16 +1,16 @@
 package com.aubg.authorshipDetectionProgram.ui;
 
-public enum UserChoice {
+public enum UserAction {
     //define constant variable
     consoleInput ("1"), fileInput ("2");
 
     public final String value;
 
-    UserChoice() {
+    UserAction() {
         this.value = "";
     }
 
-    UserChoice(String value) {
+    UserAction(String value) {
         this.value = value;
     }
 
