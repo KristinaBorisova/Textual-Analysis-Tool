@@ -1,16 +1,28 @@
 package com.aubg.authorshipDetectionProgram.core;
 
+import com.aubg.authorshipDetectionProgram.ui.UiManager;
+import com.aubg.authorshipDetectionProgram.ui.UiManagerImpl;
+
+import java.io.IOException;
+import java.lang.String;
+
 public class Manager {
 
-    public void startProcess() {
-    //request user input/text file
+    private final UiManager uiManager;
 
-    // call features calcularions on the given input
+    public Manager() throws IOException {
+        this.uiManager = new UiManagerImpl ();
+        startProcess ();
+    }
 
-    // form linguistic signatures
+    private void startProcess() throws IOException {
+        //request user input/text file
+         String[] texts = uiManager.getTextFromUser();
+        // call features calcularions on the given input
 
-    // calculate similarity between features
+        // form linguistic signatures
 
-        // print final result
+        // calculate similarity between features
+        //print final result
     }
 }
