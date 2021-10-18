@@ -17,5 +17,5 @@ public enum UserAction {
     public String getValue() {
         return value;
     }
-    }
+}
 
