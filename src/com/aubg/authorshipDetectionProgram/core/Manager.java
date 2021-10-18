@@ -17,7 +17,7 @@ public class Manager {
 
     private void startProcess() throws IOException {
         //request user input/text file
-         String[] texts = uiManager.getTextFromUser();
+        String[] texts = uiManager.getTextFromUser ();
         // call features calcularions on the given input
 
         // form linguistic signatures
