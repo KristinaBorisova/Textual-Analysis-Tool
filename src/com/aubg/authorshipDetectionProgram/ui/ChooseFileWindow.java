@@ -12,4 +12,13 @@ public class ChooseFileWindow {
         this.msgManager = new ConsoleMessages ();
     }
 
+    public String[] getFileContent() {
+        //create a variable to hold the file content
+        String[] userFileContent = null;
+        //get file content
+        //print file content for check
+        //pass file content to the next function
+        return userFileContent;
+    }
+
 }

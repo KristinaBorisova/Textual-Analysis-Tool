@@ -4,16 +4,23 @@ import java.io.IOException;
 
 public class UiManagerImpl implements UiManager {
     private final ConsoleMessages msgManager;
+    private final ConsoleInputWindow consoleInput;
+    private final ChooseFileWindow readFileWindow;
 
     public UiManagerImpl() {
         msgManager = new ConsoleMessages ();
+        consoleInput = new ConsoleInputWindow ();
+        readFileWindow = new ChooseFileWindow ();
     }
 
     @Override
     public String[] getTextFromUser() throws IOException {
+        //Display option menu to user
         showUserActionMenu ();
-        //get text from user
-        String textValue[] = {"some text for testing purposes", "here"};
+        //get preferred user action
+        UserAction usersChoice = consoleInput.getUserChoice ();
+        //get text from user input/file
+        String textValue[] = getText (usersChoice);
         return textValue;
     }
 
@@ -21,4 +28,13 @@ public class UiManagerImpl implements UiManager {
         msgManager.displayMenu ();
     }
 
+    private String[] getText(UserAction usersChoice) throws IOException {
+        String[] userTextContent = null;
+        switch (usersChoice) {
+            case consoleInput -> userTextContent = consoleInput.getUserConsoleInput ();
+            //  case fileInput -> userTextContent
+            default -> msgManager.exceptionMsg ();
+        }
+        return userTextContent;
+    }
 }
