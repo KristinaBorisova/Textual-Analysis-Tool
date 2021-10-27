@@ -32,7 +32,7 @@ public class UiManagerImpl implements UiManager {
         String[] userTextContent = null;
         switch (usersChoice) {
             case consoleInput -> userTextContent = consoleInput.getUserConsoleInput ();
-            //  case fileInput -> userTextContent
+            case fileInput -> userTextContent = readFileWindow.getFileContent ();
             default -> msgManager.exceptionMsg ();
         }
         return userTextContent;
