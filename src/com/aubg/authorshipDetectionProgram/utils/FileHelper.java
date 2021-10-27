@@ -24,7 +24,6 @@ public class FileHelper {
     }
 
     public String[] getContentFromFile(String fileLocation) throws IOException {
-        String[] fileContent2 = null;
         FileReader fileReader = new FileReader (fileLocation);
         ArrayList<String> fileContent = new ArrayList<> ();
         StringBuffer singleText = new StringBuffer ();
