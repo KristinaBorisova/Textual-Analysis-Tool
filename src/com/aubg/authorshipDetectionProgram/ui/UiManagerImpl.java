@@ -1,6 +1,5 @@
 package com.aubg.authorshipDetectionProgram.ui;
 
-import javax.swing.*;
 import java.io.IOException;
 
 public class UiManagerImpl implements UiManager {
