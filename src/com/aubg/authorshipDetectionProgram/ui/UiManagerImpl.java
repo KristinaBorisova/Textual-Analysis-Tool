@@ -1,5 +1,6 @@
 package com.aubg.authorshipDetectionProgram.ui;
 
+import javax.swing.*;
 import java.io.IOException;
 
 public class UiManagerImpl implements UiManager {
@@ -21,6 +22,7 @@ public class UiManagerImpl implements UiManager {
         UserAction usersChoice = consoleInput.getUserChoice ();
         //get text from user input/file
         String textValue[] = getText (usersChoice);
+
         return textValue;
     }
 
