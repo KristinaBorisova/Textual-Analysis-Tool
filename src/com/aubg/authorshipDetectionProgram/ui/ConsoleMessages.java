@@ -49,4 +49,16 @@ public class ConsoleMessages {
     void displayMsgContinue() {
         System.out.println ("->You have chosen to enter another text!");
     }
+
+    // Print user Text file content
+    void printFileContent(String[] arr) {
+        System.out.println ("File content: ");
+        for (int i = 0; i < arr.length; i++) {
+            System.out.println (arr[i] + " ");
+            if (arr[i].equals (".") || arr[i].equals ("?") || arr[i].equals ("!")) {
+                System.out.println (arr[i] + "\n\n");
+            }
+        }
+        System.out.println ("\n");
+    }
 }

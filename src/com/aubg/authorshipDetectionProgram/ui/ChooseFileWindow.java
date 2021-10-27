@@ -1,24 +1,29 @@
 package com.aubg.authorshipDetectionProgram.ui;
 
+import com.aubg.authorshipDetectionProgram.utils.FileHelper;
+
 import java.io.*;
 import javax.accessibility.Accessible;
 import javax.swing.*;
-import javax.swing.filechooser.FileNameExtensionFilter;
 
-public class ChooseFileWindow {
+public class ChooseFileWindow extends JComponent implements Accessible {
     private final ConsoleMessages msgManager;
+    private final FileHelper fileHelper;
 
     public ChooseFileWindow() {
         this.msgManager = new ConsoleMessages ();
+        this.fileHelper = new FileHelper ();
     }
 
-    public String[] getFileContent() {
+    public String[] getFileContent() throws IOException {
         //create a variable to hold the file content
-        String[] userFileContent = null;
+        String[] userFileContent;
+        //create a string to hold File location
+        String fileLocation = fileHelper.getFileLocationFromUi ();
         //get file content
-        //print file content for check
-        //pass file content to the next function
+        userFileContent = fileHelper.getContentFromFile (fileLocation);
+        //print the content of the user file, formatted
+        msgManager.printFileContent (userFileContent);
         return userFileContent;
     }
-
 }

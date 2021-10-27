@@ -18,11 +18,12 @@ public class Manager {
     private void startProcess() throws IOException {
         //request user input/text file
         String[] texts = uiManager.getTextFromUser ();
-        // call features calcularions on the given input
+        //TODO call features calcularions on the given input
 
-        // form linguistic signatures
+        //TODO form linguistic signatures
 
-        // calculate similarity between features
-        //print final result
+        //TODO calculate similarity between features
+
+        //TODO print final result
     }
 }
