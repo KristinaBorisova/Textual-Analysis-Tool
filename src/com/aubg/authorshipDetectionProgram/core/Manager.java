@@ -35,7 +35,7 @@ public class Manager {
         //TODO call features calcularions on the given input
         for (String text : texts) {
             double valueCheck = featureCheck.getFeatureValue (text);
-            System.out.println (valueCheck);
+            System.out.println ("Average Word Length is calculated by: \n  Characters / Number of words in text =" + valueCheck);
         }
 
         //TODO form linguistic signatures
