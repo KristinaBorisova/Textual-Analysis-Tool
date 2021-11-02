@@ -1,6 +1,6 @@
 package com.aubg.authorshipDetectionProgram.ui;
 
-import com.aubg.authorshipDetectionProgram.utils.FileHelper;
+import com.aubg.authorshipDetectionProgram.analyzer.utils.FileHelper;
 
 import java.io.*;
 import javax.accessibility.Accessible;
