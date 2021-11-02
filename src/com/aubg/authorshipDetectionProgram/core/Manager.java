@@ -1,9 +1,7 @@
 package com.aubg.authorshipDetectionProgram.core;
 
 import com.aubg.authorshipDetectionProgram.analyzer.LinguisticSignature;
-import com.aubg.authorshipDetectionProgram.analyzer.features.AverageWordLengthFeature;
-import com.aubg.authorshipDetectionProgram.analyzer.features.TextAnalyzer;
-import com.aubg.authorshipDetectionProgram.analyzer.features.TextAnalyzerImpl;
+import com.aubg.authorshipDetectionProgram.analyzer.features.*;
 import com.aubg.authorshipDetectionProgram.ui.UiManager;
 import com.aubg.authorshipDetectionProgram.ui.UiManagerImpl;
 
@@ -15,12 +13,17 @@ public class Manager {
 
     private final UiManager uiManager;
     private final TextAnalyzer textAnalyzer;
-    private final AverageWordLengthFeature featureCheck;
+    private final AverageWordLengthFeature featureCheck1;
+    private final AverageNumberOfWordsFeature featureCheck2;
+    private final SentenceComplexityFeature featureCheck3;
 
     public Manager() throws IOException {
         this.uiManager = new UiManagerImpl ();
         this.textAnalyzer = new TextAnalyzerImpl ();
-        this.featureCheck = new AverageWordLengthFeature ();
+        this.featureCheck1 = new AverageWordLengthFeature ();
+        this.featureCheck2 = new AverageNumberOfWordsFeature ();
+        this.featureCheck3 = new SentenceComplexityFeature ();
+
         startProcess ();
 
     }
@@ -34,8 +37,15 @@ public class Manager {
 
         //TODO call features calcularions on the given input
         for (String text : texts) {
-            double valueCheck = featureCheck.getFeatureValue (text);
-            System.out.println ("Average Word Length is calculated by: \n  Characters / Number of words in text =" + valueCheck);
+
+            System.out.println ("Textual Analysis of Text: ");
+            double valueCheck1 = featureCheck1.getFeatureValue (text);
+            System.out.println ("- Average Word Length is calculated by: \nCharacters / Number of words in text = " + valueCheck1);
+            double valueCheck2 = featureCheck2.getFeatureValue (text);
+            System.out.println ("- Average Number of Words is calculated by: \nWords / Sentences = " + valueCheck2);
+            double valueCheck3 = featureCheck3.getFeatureValue (text);
+            System.out.println ("- Sentence Complexity is calculated by: \nPhrases / Sentences = " + valueCheck3);
+            System.out.println ("   -------     ");
         }
 
         //TODO form linguistic signatures
