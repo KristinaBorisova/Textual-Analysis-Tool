@@ -23,7 +23,7 @@ public class AverageNumberOfWordsFeature extends BaseFeature {
     @Override
     public double getFeatureValue(String content) throws IOException {
         //calculate the value of the feature based on the given text entry by
-        // dividing the
+        // dividing the number of words in the text by the number of sentences
         double sentencesCount = textAnalyzer.getNumberOfSentences (content);
         String userText = textAnalyzer.removePunctuation (content);
         double wordsCount = textAnalyzer.getNumberOfWords (userText);
