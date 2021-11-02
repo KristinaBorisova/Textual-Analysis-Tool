@@ -1,4 +1,4 @@
-package com.aubg.authorshipDetectionProgram.utils;
+package com.aubg.authorshipDetectionProgram.analyzer.utils;
 
 import javax.swing.*;
 import javax.swing.filechooser.FileNameExtensionFilter;
