@@ -38,4 +38,13 @@ public class TextAnalyzerImpl implements TextAnalyzer {
         wordsCounter = wordsInText.length;
         return wordsCounter;
     }
+
+    @Override
+    public double getNumberOfSentences(String text) {
+        double sentencesCount = 0;
+        String[] split = text.trim ().split ("[!?.]");
+        sentencesCount = split.length;
+        return sentencesCount;
+    }
+
 }
