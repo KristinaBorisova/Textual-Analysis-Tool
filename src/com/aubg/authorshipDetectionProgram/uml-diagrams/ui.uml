@@ -3,21 +3,21 @@
   <ID>JAVA</ID>
   <OriginalElement>com.aubg.authorshipDetectionProgram.ui</OriginalElement>
   <nodes>
-    <node x="280.0" y="0.0">com.aubg.authorshipDetectionProgram.ui.UserAction</node>
-    <node x="261.0" y="344.0">com.aubg.authorshipDetectionProgram.ui.ConsoleMessages</node>
-    <node x="57.5" y="0.0">com.aubg.authorshipDetectionProgram.ui.UiManager</node>
-    <node x="0.0" y="223.0">com.aubg.authorshipDetectionProgram.ui.ConsoleInputWindow</node>
-    <node x="0.0" y="344.0">com.aubg.authorshipDetectionProgram.ui.ChooseFileWindow</node>
-    <node x="0.0" y="102.0">com.aubg.authorshipDetectionProgram.ui.UiManagerImpl</node>
+    <node x="0.0" y="0.0">com.aubg.authorshipDetectionProgram.ui.UserAction</node>
+    <node x="261.0" y="374.0">com.aubg.authorshipDetectionProgram.ui.ConsoleMessages</node>
+    <node x="233.5" y="0.0">com.aubg.authorshipDetectionProgram.ui.UiManager</node>
+    <node x="0.0" y="253.0">com.aubg.authorshipDetectionProgram.ui.ConsoleInputWindow</node>
+    <node x="173.0" y="102.0">com.aubg.authorshipDetectionProgram.ui.UiManagerImpl</node>
+    <node x="0.0" y="374.0">com.aubg.authorshipDetectionProgram.ui.ChooseFileWindow</node>
   </nodes>
   <notes />
   <edges>
     <edge source="com.aubg.authorshipDetectionProgram.ui.UiManagerImpl" target="com.aubg.authorshipDetectionProgram.ui.UiManager">
-      <point x="0.0" y="-38.0" />
+      <point x="0.0" y="-49.0" />
       <point x="0.0" y="26.0" />
     </edge>
   </edges>
-  <settings layout="Hierarchic Group" zoom="1.0" x="214.5" y="190.5" />
+  <settings layout="Hierarchic Group" zoom="1.0" x="214.5" y="210.0" />
   <SelectedNodes>
     <node>com.aubg.authorshipDetectionProgram.ui.ConsoleInputWindow</node>
   </SelectedNodes>
