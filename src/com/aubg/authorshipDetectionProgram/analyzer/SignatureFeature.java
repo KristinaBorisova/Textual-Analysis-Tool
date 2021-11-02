@@ -5,4 +5,5 @@ public enum SignatureFeature {
     //A constant to hold the average word length
     AVG_WORD_LENGTH_FEATURE,
     AVG_NUMBER_OF_WORDS_FEATURE,
+    SENTENCE_COMPLEXITY_FEATURE;
 }

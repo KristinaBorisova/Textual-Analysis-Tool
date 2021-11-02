@@ -1,6 +1,8 @@
 package com.aubg.authorshipDetectionProgram.analyzer.features;
 
 import java.io.IOException;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 public class TextAnalyzerImpl implements TextAnalyzer {
 
@@ -45,6 +47,18 @@ public class TextAnalyzerImpl implements TextAnalyzer {
         String[] split = text.trim ().split ("[!?.]");
         sentencesCount = split.length;
         return sentencesCount;
+    }
+
+    @Override
+    public double getNumberOfPhrases(String content) throws IOException {
+        int numberOfPhrases = 0;
+        String matchingPunctuation = ",[\\w\\s]|:[\\w\\s]|;[\\w\\s].*?(\\.|\\!|\\?)";
+        String regex = matchingPunctuation;
+        Matcher m = Pattern.compile (regex).matcher (content);
+        while (m.find ()) {
+            numberOfPhrases++;
+        }
+        return numberOfPhrases;
     }
 
 }
