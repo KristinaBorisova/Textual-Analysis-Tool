@@ -13,7 +13,7 @@ public abstract class BaseFeature {
     // The value of the feature calculated
     public abstract double getFeatureValue(String content) throws IOException;
 
-    //The weight each feature has in formulating the final lingusitc signature
+    //The weight each feature has in formulating the final linguistic signature
     public abstract double getDefaultWeight();
 
 }
