@@ -16,7 +16,7 @@ public class Manager {
     private final AverageWordLengthFeature featureCheck1;
     private final AverageNumberOfWordsFeature featureCheck2;
     private final SentenceComplexityFeature featureCheck3;
-    //private final UniqueWordsRatioFeature featureCheck4;
+    private final UniqueWordsRatioFeature featureCheck4;
 
     public Manager() throws IOException {
         this.uiManager = new UiManagerImpl ();
@@ -24,7 +24,7 @@ public class Manager {
         this.featureCheck1 = new AverageWordLengthFeature ();
         this.featureCheck2 = new AverageNumberOfWordsFeature ();
         this.featureCheck3 = new SentenceComplexityFeature ();
-      //  this.featureCheck4 = new UniqueWordsRatioFeature ();
+        this.featureCheck4 = new UniqueWordsRatioFeature ();
 
         startProcess ();
 
@@ -46,13 +46,10 @@ public class Manager {
             System.out.println ("- Average Number of Words is calculated by: \nWords / Sentences = " + valueCheck2);
             double valueCheck3 = featureCheck3.getFeatureValue (text);
             System.out.println ("- Sentence Complexity is calculated by: \nPhrases / Sentences = " + valueCheck3);
-            double valueCheck4 = featureCheck3.getFeatureValue (text);
-            System.out.println("--------------------" );
+            double valueCheck4 = featureCheck4.getFeatureValue (text);
+            System.out.println ("- Unique Words Ratio is calculated by: \nUnique words / Total Words = " + valueCheck4);
+            System.out.println ("   -------     ");
             System.out.println();
-
-
-//            System.out.println ("- Unique Words Ratio is calculated by: \nUnique words / Total Words = " + valueCheck4);
-//            System.out.println ("   -------     ");
         }
 
         //TODO form linguistic signatures

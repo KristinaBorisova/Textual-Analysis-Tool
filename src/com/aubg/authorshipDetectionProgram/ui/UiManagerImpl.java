@@ -19,7 +19,7 @@ public class UiManagerImpl implements UiManager {
         showUserActionMenu ();
         //get preferred user action
         UserAction usersChoice = consoleInput.getUserChoice ();
-        //get text from user input/file
+        //get text from user input/txt file
         String textValue[] = getText (usersChoice);
 
         return textValue;

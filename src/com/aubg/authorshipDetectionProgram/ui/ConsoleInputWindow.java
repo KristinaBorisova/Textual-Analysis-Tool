@@ -25,7 +25,7 @@ public class ConsoleInputWindow {
                 return UserAction.consoleInput;
             }
             case 2 -> {
-                System.out.println ("You have chosen to open existing file.");
+                System.out.println ("You have chosen to open existing .txt file.");
                 return UserAction.fileInput;
             }
             default -> {
