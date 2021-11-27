@@ -2,6 +2,8 @@ package com.aubg.authorshipDetectionProgram.core;
 
 import com.aubg.authorshipDetectionProgram.analyzer.LinguisticSignature;
 import com.aubg.authorshipDetectionProgram.analyzer.features.*;
+import com.aubg.authorshipDetectionProgram.analyzer.TextAnalyzer;
+import com.aubg.authorshipDetectionProgram.analyzer.TextAnalyzerImpl;
 import com.aubg.authorshipDetectionProgram.ui.UiManager;
 import com.aubg.authorshipDetectionProgram.ui.UiManagerImpl;
 
@@ -19,6 +21,8 @@ public class Manager {
     private final UniqueWordsRatioFeature featureCheck4;
 
     public Manager() throws IOException {
+
+        //Testing single Features
         this.uiManager = new UiManagerImpl ();
         this.textAnalyzer = new TextAnalyzerImpl ();
         this.featureCheck1 = new AverageWordLengthFeature ();

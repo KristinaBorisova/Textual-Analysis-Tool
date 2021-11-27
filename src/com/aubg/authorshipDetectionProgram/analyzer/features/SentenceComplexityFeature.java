@@ -1,6 +1,8 @@
 package com.aubg.authorshipDetectionProgram.analyzer.features;
 
 import com.aubg.authorshipDetectionProgram.analyzer.SignatureFeature;
+import com.aubg.authorshipDetectionProgram.analyzer.TextAnalyzer;
+import com.aubg.authorshipDetectionProgram.analyzer.TextAnalyzerImpl;
 
 import java.io.IOException;
 
@@ -17,6 +19,11 @@ public class SentenceComplexityFeature extends BaseFeature{
     @Override
     public double getDefaultWeight() {
         return FEATURE_WEIGHT;
+    }
+
+    @Override
+    public SignatureFeature getName() {
+        return FEATURE_NAME;
     }
 
     @Override

@@ -1,10 +1,9 @@
-package com.aubg.authorshipDetectionProgram.ui;
+package com.aubg.authorshipDetectionProgram.ui.fileInput;
+import com.aubg.authorshipDetectionProgram.ui.ConsoleMessages;
 
-import com.aubg.authorshipDetectionProgram.analyzer.utils.FileHelper;
-
-import java.io.*;
 import javax.accessibility.Accessible;
 import javax.swing.*;
+import java.io.IOException;
 
 public class ChooseFileWindow extends JComponent implements Accessible {
     private final ConsoleMessages msgManager;

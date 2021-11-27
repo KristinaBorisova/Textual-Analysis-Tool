@@ -1,6 +1,8 @@
 package com.aubg.authorshipDetectionProgram.analyzer.features;
 
 import com.aubg.authorshipDetectionProgram.analyzer.SignatureFeature;
+import com.aubg.authorshipDetectionProgram.analyzer.TextAnalyzer;
+import com.aubg.authorshipDetectionProgram.analyzer.TextAnalyzerImpl;
 
 import java.io.IOException;
 
@@ -17,6 +19,12 @@ public class UniqueWordsRatioFeature extends BaseFeature {
     public double getDefaultWeight() {
         return FEATURE_WEIGHT;
     }
+
+    @Override
+    public SignatureFeature getName() {
+        return FEATURE_NAME;
+    }
+
     @Override
     public double getFeatureValue(String content) throws IOException {
         //TODO divide number of unique words by the total number of words in a sentence

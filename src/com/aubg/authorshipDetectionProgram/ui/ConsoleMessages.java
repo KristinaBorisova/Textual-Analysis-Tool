@@ -51,7 +51,7 @@ public class ConsoleMessages {
     }
 
     // Print user Text file content
-    void printFileContent(String[] arr) {
+    public void printFileContent(String[] arr) {
         System.out.println ("File content: ");
         for (int i = 0; i < arr.length; i++) {
             System.out.println (arr[i] + " ");

@@ -1,5 +1,7 @@
 package com.aubg.authorshipDetectionProgram.ui;
 
+import com.aubg.authorshipDetectionProgram.ui.fileInput.ChooseFileWindow;
+
 import java.io.IOException;
 
 public class UiManagerImpl implements UiManager {

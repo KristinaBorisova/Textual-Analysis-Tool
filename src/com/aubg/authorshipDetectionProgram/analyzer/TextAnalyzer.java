@@ -1,4 +1,4 @@
-package com.aubg.authorshipDetectionProgram.analyzer.features;
+package com.aubg.authorshipDetectionProgram.analyzer;
 
 import java.io.IOException;
 
