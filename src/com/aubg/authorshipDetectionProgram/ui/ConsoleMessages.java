@@ -5,7 +5,7 @@ import java.util.List;
 public class ConsoleMessages {
 
     //show to the user existing options for text input
-    void displayMenu() {
+     void displayMenu() {
         System.out.print ("Please choose how to proceed with Text Authentication:" +
                 "\n(1) - Use Console to enter text manually" +
                 "\n(2) - Open existing file");
@@ -13,7 +13,7 @@ public class ConsoleMessages {
     }
 
     //User Input process - Unexpected value for option menu
-    void exceptionMsg() {
+     void exceptionMsg() {
         System.out.println ("\"Exception! Unexpected value!");
     }
 
@@ -28,7 +28,7 @@ public class ConsoleMessages {
     }
 
     // User Message - Enter text
-    void consoleInputMsg() {
+    protected void consoleInputMsg() {
         System.out.println ("- Please enter the text to be analyzed. Terminate with '+' ");
     }
 

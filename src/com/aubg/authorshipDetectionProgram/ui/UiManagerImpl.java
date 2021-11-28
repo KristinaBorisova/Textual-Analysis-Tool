@@ -23,7 +23,6 @@ public class UiManagerImpl implements UiManager {
         UserAction usersChoice = consoleInput.getUserChoice ();
         //get text from user input/txt file
         String textValue[] = getText (usersChoice);
-
         return textValue;
     }
 
