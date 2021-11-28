@@ -39,4 +39,19 @@ public class UiManagerImpl implements UiManager {
         }
         return userTextContent;
     }
+
+    // Print similarity result matrix
+    @Override
+    public void printResultsMatrix(double[][] resultsMatrix, int matrixSize) {
+        for (int col = 0; col < matrixSize; col++) {
+            for (int row = 0; row < matrixSize; row++) {
+                System.out.print (resultsMatrix[col][row] + " | ");
+            }
+            System.out.println ();
+        }
+
+    }
+
+
+
 }

@@ -75,17 +75,12 @@ public class Manager {
         double[][] resultsMatrix = new double[matrixSize][matrixSize];
 
         for (int col = 0; col < signatures.size (); col++) {
-
             for (int row = 0; row < signatures.size (); row++) {
                 //calculate similarity between features
                 resultsMatrix[row][col] = signatures.get (row).calculateSimilarity (signatures.get (col));
             }
         }
-        //TODO print final result in result matrix
-       
-    }
-
-
-
+        // print final result in result matrix
+        uiManager.printResultsMatrix (resultsMatrix, resultsMatrix.length);
     }
 }
