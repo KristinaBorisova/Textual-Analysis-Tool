@@ -73,6 +73,8 @@ public class Manager {
         //TODO calculate similarity between features
 
 
-        //TODO print final result
+        //TODO print final result in result matrix
+        int matrixSize = signatures.size ();
+
     }
 }

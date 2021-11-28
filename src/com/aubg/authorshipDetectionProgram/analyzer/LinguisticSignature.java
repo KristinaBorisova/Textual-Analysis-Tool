@@ -33,4 +33,15 @@ public class LinguisticSignature {
         }
         return null;
     }
+
+
+    public double calculateSimilarity(LinguisticSignature secondSignature) {
+        double finalResult = 0;
+        //Similarity formula: The difference between two lingustic signatures' values, multiplied by their weight
+        return finalResult;
+    }
+
+
+
+
 }
