@@ -70,11 +70,22 @@ public class Manager {
 
         //Test Linguistic signatures collection of 2 signatures
         System.out.println ("Signatures Collected: \n"+ signatures.get (0) + " \n" + signatures.get(1));
-        //TODO calculate similarity between features
 
-
-        //TODO print final result in result matrix
         int matrixSize = signatures.size ();
+        double[][] resultsMatrix = new double[matrixSize][matrixSize];
+
+        for (int col = 0; col < signatures.size (); col++) {
+
+            for (int row = 0; row < signatures.size (); row++) {
+                //calculate similarity between features
+                resultsMatrix[row][col] = signatures.get (row).calculateSimilarity (signatures.get (col));
+            }
+        }
+        //TODO print final result in result matrix
+       
+    }
+
+
 
     }
 }
