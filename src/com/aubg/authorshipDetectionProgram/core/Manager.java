@@ -57,7 +57,9 @@ public class Manager {
         }
 
         //TODO form linguistic signatures
-
+        for (String text : texts) {
+            signatures.add (FeaturesCalculator.getAllFeaturesValues (text));
+        }
         //TODO calculate similarity between features
 
         //TODO print final result
