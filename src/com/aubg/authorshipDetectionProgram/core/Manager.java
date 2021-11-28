@@ -1,9 +1,13 @@
 package com.aubg.authorshipDetectionProgram.core;
 
 import com.aubg.authorshipDetectionProgram.analyzer.LinguisticSignature;
-import com.aubg.authorshipDetectionProgram.analyzer.features.*;
 import com.aubg.authorshipDetectionProgram.analyzer.TextAnalyzer;
 import com.aubg.authorshipDetectionProgram.analyzer.TextAnalyzerImpl;
+import com.aubg.authorshipDetectionProgram.analyzer.features.AverageNumberOfWordsFeature;
+import com.aubg.authorshipDetectionProgram.analyzer.features.AverageWordLengthFeature;
+import com.aubg.authorshipDetectionProgram.analyzer.features.SentenceComplexityFeature;
+import com.aubg.authorshipDetectionProgram.analyzer.features.UniqueWordsRatioFeature;
+import com.aubg.authorshipDetectionProgram.analyzer.utils.FeaturesCalculatorImpl;
 import com.aubg.authorshipDetectionProgram.ui.UiManager;
 import com.aubg.authorshipDetectionProgram.ui.UiManagerImpl;
 
@@ -19,6 +23,7 @@ public class Manager {
     private final AverageNumberOfWordsFeature featureCheck2;
     private final SentenceComplexityFeature featureCheck3;
     private final UniqueWordsRatioFeature featureCheck4;
+    private final FeaturesCalculator featuresCalculator;
 
     public Manager() throws IOException {
 
@@ -29,6 +34,8 @@ public class Manager {
         this.featureCheck2 = new AverageNumberOfWordsFeature ();
         this.featureCheck3 = new SentenceComplexityFeature ();
         this.featureCheck4 = new UniqueWordsRatioFeature ();
+        this.featuresCalculator = new FeaturesCalculatorImpl ();
+
 
         startProcess ();
 
@@ -37,7 +44,7 @@ public class Manager {
     private void startProcess() throws IOException {
         //request user input/text file
         String[] texts = uiManager.getTextFromUser ();
-
+        
         //create an array list to hold signature values
         List<LinguisticSignature> signatures = new ArrayList<> ();
 
@@ -56,10 +63,13 @@ public class Manager {
             System.out.println();
         }
 
-        //TODO form linguistic signatures
+        //For every single text entry in the texts array, add to the array list of signatures the corresponding values of this text 
         for (String text : texts) {
-            signatures.add (FeaturesCalculator.getAllFeaturesValues (text));
+            signatures.add (featuresCalculator.getAllFeaturesValues (text));
         }
+
+        //Test Linguistic signatures collection of 2 signatures
+        System.out.println ("Signatures Collected: \n"+ signatures.get (0) + " \n" + signatures.get(1));
         //TODO calculate similarity between features
 
         //TODO print final result
