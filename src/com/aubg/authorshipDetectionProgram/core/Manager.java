@@ -72,6 +72,7 @@ public class Manager {
         System.out.println ("Signatures Collected: \n"+ signatures.get (0) + " \n" + signatures.get(1));
         //TODO calculate similarity between features
 
+
         //TODO print final result
     }
 }
