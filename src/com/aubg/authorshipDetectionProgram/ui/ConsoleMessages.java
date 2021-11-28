@@ -12,6 +12,10 @@ public class ConsoleMessages {
         System.out.println ();
     }
 
+    //Feature Not Found
+    public void featureNotFound() {
+        System.out.println ("Error, feature not found!");
+    }
     //User Input process - Unexpected value for option menu
      void exceptionMsg() {
         System.out.println ("\"Exception! Unexpected value!");
