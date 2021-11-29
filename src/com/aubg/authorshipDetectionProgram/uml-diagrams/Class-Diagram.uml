@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>com.aubg.authorshipDetectionProgram.ui.UiManager</OriginalElement>
+  <nodes>
+    <node x="542.0" y="1137.0">com.aubg.authorshipDetectionProgram.Main</node>
+    <node x="278.0" y="862.0">com.aubg.authorshipDetectionProgram.analyzer.SignatureFeature</node>
+    <node x="924.0" y="862.0">com.aubg.authorshipDetectionProgram.analyzer.utils.Features</node>
+    <node x="1187.0" y="190.0">com.aubg.authorshipDetectionProgram.analyzer.features.AverageWordLengthFeature</node>
+    <node x="935.0" y="190.0">com.aubg.authorshipDetectionProgram.analyzer.features.UniqueWordsRatioFeature</node>
+    <node x="0.0" y="571.0">com.aubg.authorshipDetectionProgram.ui.UiManagerImpl</node>
+    <node x="667.0" y="190.0">com.aubg.authorshipDetectionProgram.analyzer.features.SentenceComplexityFeature</node>
+    <node x="912.0" y="467.0">com.aubg.authorshipDetectionProgram.core.FeaturesCalculator</node>
+    <node x="912.0" y="571.0">com.aubg.authorshipDetectionProgram.analyzer.utils.FeaturesCalculatorImpl</node>
+    <node x="0.0" y="862.0">com.aubg.authorshipDetectionProgram.ui.ConsoleMessages</node>
+    <node x="261.0" y="1137.0">com.aubg.authorshipDetectionProgram.ui.fileInput.FileHelper</node>
+    <node x="286.0" y="467.0">com.aubg.authorshipDetectionProgram.core.Manager</node>
+    <node x="47.0" y="467.0">com.aubg.authorshipDetectionProgram.ui.UiManager</node>
+    <node x="813.0" y="0.0">com.aubg.authorshipDetectionProgram.analyzer.features.BaseFeature</node>
+    <node x="633.0" y="467.0">com.aubg.authorshipDetectionProgram.ui.ConsoleInputWindow</node>
+    <node x="542.0" y="862.0">com.aubg.authorshipDetectionProgram.analyzer.LinguisticSignature</node>
+    <node x="0.0" y="214.0">com.aubg.authorshipDetectionProgram.analyzer.TextAnalyzerImpl</node>
+    <node x="383.0" y="190.0">com.aubg.authorshipDetectionProgram.analyzer.features.AverageNumberOfWordsFeature</node>
+    <node x="31.5" y="0.0">com.aubg.authorshipDetectionProgram.analyzer.TextAnalyzer</node>
+    <node x="0.0" y="1137.0">com.aubg.authorshipDetectionProgram.ui.fileInput.ChooseFileWindow</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.aubg.authorshipDetectionProgram.analyzer.TextAnalyzerImpl" target="com.aubg.authorshipDetectionProgram.analyzer.TextAnalyzer">
+      <point x="0.0" y="-104.0" />
+      <point x="0.0" y="82.0" />
+    </edge>
+    <edge source="com.aubg.authorshipDetectionProgram.analyzer.features.AverageNumberOfWordsFeature" target="com.aubg.authorshipDetectionProgram.analyzer.features.BaseFeature">
+      <point x="0.0" y="-113.0" />
+      <point x="515.0" y="160.0" />
+      <point x="840.0" y="160.0" />
+      <point x="-81.0" y="70.0" />
+    </edge>
+    <edge source="com.aubg.authorshipDetectionProgram.analyzer.features.AverageWordLengthFeature" target="com.aubg.authorshipDetectionProgram.analyzer.features.BaseFeature">
+      <point x="0.0" y="-113.0" />
+      <point x="1307.0" y="160.0" />
+      <point x="1002.0" y="160.0" />
+      <point x="81.0" y="70.0" />
+    </edge>
+    <edge source="com.aubg.authorshipDetectionProgram.analyzer.utils.FeaturesCalculatorImpl" target="com.aubg.authorshipDetectionProgram.core.FeaturesCalculator">
+      <point x="0.0" y="-69.0" />
+      <point x="0.0" y="27.0" />
+    </edge>
+    <edge source="com.aubg.authorshipDetectionProgram.analyzer.features.SentenceComplexityFeature" target="com.aubg.authorshipDetectionProgram.analyzer.features.BaseFeature">
+      <point x="0.0" y="-113.0" />
+      <point x="791.0" y="170.0" />
+      <point x="894.0" y="170.0" />
+      <point x="-27.0" y="70.0" />
+    </edge>
+    <edge source="com.aubg.authorshipDetectionProgram.analyzer.features.UniqueWordsRatioFeature" target="com.aubg.authorshipDetectionProgram.analyzer.features.BaseFeature">
+      <point x="0.0" y="-113.0" />
+      <point x="1051.0" y="170.0" />
+      <point x="948.0" y="170.0" />
+      <point x="27.0" y="70.0" />
+    </edge>
+    <edge source="com.aubg.authorshipDetectionProgram.ui.UiManagerImpl" target="com.aubg.authorshipDetectionProgram.ui.UiManager">
+      <point x="0.0" y="-123.0" />
+      <point x="0.0" y="27.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0204252088078967" x="713.5" y="638.5" />
+  <SelectedNodes>
+    <node>com.aubg.authorshipDetectionProgram.analyzer.TextAnalyzerImpl</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Constructors</Category>
+    <Category>Methods</Category>
+    <Category>Properties</Category>
+    <Category>Inner Classes</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

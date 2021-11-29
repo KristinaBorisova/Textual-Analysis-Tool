@@ -5,15 +5,19 @@ import java.util.List;
 public class ConsoleMessages {
 
     //show to the user existing options for text input
-    void displayMenu() {
+     void displayMenu() {
         System.out.print ("Please choose how to proceed with Text Authentication:" +
                 "\n(1) - Use Console to enter text manually" +
                 "\n(2) - Open existing file");
         System.out.println ();
     }
 
+    //Feature Not Found
+    public void featureNotFound() {
+        System.out.println ("Error, feature not found!");
+    }
     //User Input process - Unexpected value for option menu
-    void exceptionMsg() {
+     void exceptionMsg() {
         System.out.println ("\"Exception! Unexpected value!");
     }
 
@@ -28,7 +32,7 @@ public class ConsoleMessages {
     }
 
     // User Message - Enter text
-    void consoleInputMsg() {
+    protected void consoleInputMsg() {
         System.out.println ("- Please enter the text to be analyzed. Terminate with '+' ");
     }
 
@@ -51,7 +55,7 @@ public class ConsoleMessages {
     }
 
     // Print user Text file content
-    void printFileContent(String[] arr) {
+    public void printFileContent(String[] arr) {
         System.out.println ("File content: ");
         for (int i = 0; i < arr.length; i++) {
             System.out.println (arr[i] + " ");

@@ -1,6 +1,8 @@
-package com.aubg.authorshipDetectionProgram.analyzer.features;
+package com.aubg.authorshipDetectionProgram.analyzer;
 
 import java.io.IOException;
+import java.util.LinkedHashMap;
+import java.util.Map;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -60,5 +62,41 @@ public class TextAnalyzerImpl implements TextAnalyzer {
         }
         return numberOfPhrases;
     }
+
+    @Override
+    public double getNumberOfUniqueWords(String content) throws IOException {
+        Map<String, Integer> uniqueWordsMap = getWordsOccuranceMap (content);
+        return uniqueWordsMap.size ();
+    }
+
+
+    private Map<String, Integer> getWordsOccuranceMap(String text) {
+
+        String userText = text.trim ();
+        int wordOccurance = 0;
+        String[] wordsInText = userText.split (" ");
+        Map<String, Integer> wordsOccuranceMap = new LinkedHashMap<> ();
+        for (String word : wordsInText) {
+            String cleanedUpWord = word.toLowerCase ()
+                    .replace (",", "")
+                    .replace (":", "")
+                    .replace (".", "")
+                    .replace (" -", "")
+                    .replace ("!", "")
+                    .replace ("?", "")
+                    .replace ("\n", "");
+            if (wordsOccuranceMap.containsKey (cleanedUpWord)) {
+                wordOccurance = wordsOccuranceMap.get (cleanedUpWord);
+                wordsOccuranceMap.put (cleanedUpWord, wordOccurance + 1);
+            } else {
+                wordsOccuranceMap.put (cleanedUpWord, 1);
+            }
+        }
+        return wordsOccuranceMap;
+    }
+
+
+
+
 
 }

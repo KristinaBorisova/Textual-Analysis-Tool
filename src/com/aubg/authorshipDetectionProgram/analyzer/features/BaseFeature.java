@@ -16,4 +16,7 @@ public abstract class BaseFeature {
     //The weight each feature has in formulating the final linguistic signature
     public abstract double getDefaultWeight();
 
+    //A method to call the Name of each feature
+    public abstract SignatureFeature getName();
+
 }

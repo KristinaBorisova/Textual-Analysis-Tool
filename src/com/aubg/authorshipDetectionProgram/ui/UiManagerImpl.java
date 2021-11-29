@@ -1,5 +1,7 @@
 package com.aubg.authorshipDetectionProgram.ui;
 
+import com.aubg.authorshipDetectionProgram.ui.fileInput.ChooseFileWindow;
+
 import java.io.IOException;
 
 public class UiManagerImpl implements UiManager {
@@ -19,9 +21,8 @@ public class UiManagerImpl implements UiManager {
         showUserActionMenu ();
         //get preferred user action
         UserAction usersChoice = consoleInput.getUserChoice ();
-        //get text from user input/file
+        //get text from user input/txt file
         String textValue[] = getText (usersChoice);
-
         return textValue;
     }
 
@@ -38,4 +39,19 @@ public class UiManagerImpl implements UiManager {
         }
         return userTextContent;
     }
+
+    // Print similarity result matrix
+    @Override
+    public void printResultsMatrix(double[][] resultsMatrix, int matrixSize) {
+        for (int col = 0; col < matrixSize; col++) {
+            for (int row = 0; row < matrixSize; row++) {
+                System.out.print (resultsMatrix[col][row] + " | ");
+            }
+            System.out.println ();
+        }
+
+    }
+
+
+
 }

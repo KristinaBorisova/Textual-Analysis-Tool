@@ -1,9 +1,8 @@
 package com.aubg.authorshipDetectionProgram.ui;
-
-import java.util.Scanner;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.Scanner;
 
 
 public class ConsoleInputWindow {
@@ -16,7 +15,7 @@ public class ConsoleInputWindow {
     }
 
     //Ask the user for their preffered way of importing text
-    UserAction getUserChoice() {
+    public UserAction getUserChoice() {
 
         int userChoice = Integer.parseInt (input.nextLine ().trim ());
         switch (userChoice) {
@@ -25,7 +24,7 @@ public class ConsoleInputWindow {
                 return UserAction.consoleInput;
             }
             case 2 -> {
-                System.out.println ("You have chosen to open existing file.");
+                System.out.println ("You have chosen to open existing .txt file.");
                 return UserAction.fileInput;
             }
             default -> {

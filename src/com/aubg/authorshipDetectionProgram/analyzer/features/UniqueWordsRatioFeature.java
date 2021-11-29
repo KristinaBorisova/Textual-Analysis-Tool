@@ -6,16 +6,15 @@ import com.aubg.authorshipDetectionProgram.analyzer.TextAnalyzerImpl;
 
 import java.io.IOException;
 
-public class SentenceComplexityFeature extends BaseFeature{
+public class UniqueWordsRatioFeature extends BaseFeature {
     TextAnalyzer textAnalyzer = new TextAnalyzerImpl ();
     private static final double FEATURE_WEIGHT = 11;
-    private static final SignatureFeature FEATURE_NAME = SignatureFeature.SENTENCE_COMPLEXITY_FEATURE;
+    private static final SignatureFeature FEATURE_NAME = SignatureFeature.UNIQUE_WORDS_RATIO_FEATURE;
 
     @Override
     public SignatureFeature getFeatureName() {
-        return SignatureFeature.SENTENCE_COMPLEXITY_FEATURE;
+        return FEATURE_NAME;
     }
-
     @Override
     public double getDefaultWeight() {
         return FEATURE_WEIGHT;
@@ -28,9 +27,10 @@ public class SentenceComplexityFeature extends BaseFeature{
 
     @Override
     public double getFeatureValue(String content) throws IOException {
-        //TODO find the value by dividing the number of phrases by the number of sentences
-        double phrasesInText = textAnalyzer.getNumberOfPhrases (content);
-        double sentencesCounter = textAnalyzer.getNumberOfSentences (content);
-        return phrasesInText / sentencesCounter;
+        //TODO divide number of unique words by the total number of words in a sentence
+        double wordsInText = textAnalyzer.getNumberOfWords (content);
+        double uniqueWordsCounter = textAnalyzer.getNumberOfUniqueWords (content);
+        return uniqueWordsCounter/wordsInText;
     }
+
 }

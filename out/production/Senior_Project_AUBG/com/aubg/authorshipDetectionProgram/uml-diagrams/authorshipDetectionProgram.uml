@@ -3,48 +3,23 @@
   <ID>JAVA</ID>
   <OriginalElement>com.aubg.authorshipDetectionProgram</OriginalElement>
   <nodes>
-    <node x="54.599999999999994" y="336.0">com.aubg.authorshipDetectionProgram.Main</node>
-    <node x="40.0" y="102.0">com.aubg.authorshipDetectionProgram.ui</node>
-    <node x="249.60000000000002" y="0.0">com.aubg.authorshipDetectionProgram.uml-diagrams</node>
-    <node x="66.50909090909093" y="233.09090909090912">com.aubg.authorshipDetectionProgram.core</node>
-    <node x="28.0" y="0.0">com.aubg.authorshipDetectionProgram.utils</node>
+    <node x="0.0" y="0.0">com.aubg.authorshipDetectionProgram.Main</node>
+    <node x="173.0" y="196.0">com.aubg.authorshipDetectionProgram.ui</node>
+    <node x="0.0" y="99.0">com.aubg.authorshipDetectionProgram.uml-diagrams</node>
+    <node x="0.0" y="196.0">com.aubg.authorshipDetectionProgram.core</node>
   </nodes>
   <notes />
-  <edges>
-    <edge source="com.aubg.authorshipDetectionProgram.core" target="com.aubg.authorshipDetectionProgram.ui">
-      <point x="32.0" y="-26.0" />
-      <point x="161.6" y="214.0" />
-      <point x="140.79999999999998" y="214.0" />
-      <point x="44.79999999999998" y="26.0" />
-    </edge>
-    <edge source="com.aubg.authorshipDetectionProgram.ui" target="com.aubg.authorshipDetectionProgram.utils">
-      <point x="28.0" y="-26.0" />
-      <point x="124.0" y="77.0" />
-      <point x="130.0" y="77.0" />
-      <point x="34.0" y="26.0" />
-    </edge>
-    <edge source="com.aubg.authorshipDetectionProgram.Main" target="com.aubg.authorshipDetectionProgram.core">
-      <point x="0.0" y="-27.0" />
-      <point x="0.0" y="26.0" />
-    </edge>
-    <edge source="com.aubg.authorshipDetectionProgram.ui" target="com.aubg.authorshipDetectionProgram.ui">
-      <point x="0.0" y="26.0" />
-      <point x="96.0" y="194.0" />
-      <point x="0.0" y="194.0" />
-      <point x="0.0" y="110.66666666666669" />
-      <point x="-56.0" y="-17.333333333333314" />
-    </edge>
-  </edges>
-  <settings layout="Hierarchic Group" zoom="1.1" x="229.5" y="193.99999999999997" />
+  <edges />
+  <settings layout="Hierarchic Group" zoom="0.6000000000000001" x="240.99999999999997" y="190.49999999999997" />
   <SelectedNodes>
-    <node>com.aubg.authorshipDetectionProgram.core</node>
+    <node>com.aubg.authorshipDetectionProgram.Main</node>
   </SelectedNodes>
   <Categories>
     <Category>Properties</Category>
-    <Category>Constructors</Category>
+    <Category>Inner Classes</Category>
     <Category>Fields</Category>
     <Category>Methods</Category>
-    <Category>Inner Classes</Category>
+    <Category>Constructors</Category>
   </Categories>
   <SCOPE>All</SCOPE>
   <VISIBILITY>private</VISIBILITY>
