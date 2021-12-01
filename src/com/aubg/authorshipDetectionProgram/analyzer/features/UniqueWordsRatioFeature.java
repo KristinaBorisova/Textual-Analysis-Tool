@@ -27,7 +27,6 @@ public class UniqueWordsRatioFeature extends BaseFeature {
 
     @Override
     public double getFeatureValue(String content) throws IOException {
-        //TODO divide number of unique words by the total number of words in a sentence
         double wordsInText = textAnalyzer.getNumberOfWords (content);
         double uniqueWordsCounter = textAnalyzer.getNumberOfUniqueWords (content);
         return uniqueWordsCounter/wordsInText;
