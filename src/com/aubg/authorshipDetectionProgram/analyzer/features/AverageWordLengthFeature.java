@@ -12,7 +12,7 @@ public class AverageWordLengthFeature extends BaseFeature {
     the name of the feature and its value based  on the textual analysis process.
     This class inherits the "BaseFeature" Class and is responsible for gathering the needed information for this specific feature */
     TextAnalyzer textAnalyzer = new TextAnalyzerImpl ();
-    private static final double FEATURE_WEIGHT = 11;
+    private static final double FEATURE_WEIGHT = 11.0D;
     private static final SignatureFeature FEATURE_NAME = SignatureFeature.AVG_WORD_LENGTH_FEATURE;
 
     @Override

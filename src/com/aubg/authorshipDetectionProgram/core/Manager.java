@@ -16,7 +16,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Manager {
-
+    //declaring reference variables
     private final UiManager uiManager;
     private final TextAnalyzer textAnalyzer;
     private final AverageWordLengthFeature featureCheck1;
@@ -27,7 +27,7 @@ public class Manager {
 
     public Manager() throws IOException {
 
-        //Testing single Features
+        //Testing single Features with instance variables
         this.uiManager = new UiManagerImpl ();
         this.textAnalyzer = new TextAnalyzerImpl ();
         this.featureCheck1 = new AverageWordLengthFeature ();
@@ -35,16 +35,13 @@ public class Manager {
         this.featureCheck3 = new SentenceComplexityFeature ();
         this.featureCheck4 = new UniqueWordsRatioFeature ();
         this.featuresCalculator = new FeaturesCalculatorImpl ();
-
-
         startProcess ();
-
     }
 
     private void startProcess() throws IOException {
         //request user input/text file
         String[] texts = uiManager.getTextFromUser ();
-        
+
         //create an array list to hold signature values
         List<LinguisticSignature> signatures = new ArrayList<> ();
 
@@ -60,7 +57,7 @@ public class Manager {
             double valueCheck4 = featureCheck4.getFeatureValue (text);
             System.out.println ("- Unique Words Ratio is calculated by: \nUnique words / Total Words = " + valueCheck4);
             System.out.println ("   -------     ");
-            System.out.println();
+            System.out.println ();
         }
 
         //For every single text entry in the texts array, add to the array list of signatures the corresponding values of this text 
@@ -69,15 +66,15 @@ public class Manager {
         }
 
         //Test Linguistic signatures collection of 2 signatures
-        System.out.println ("Signatures Collected: \n"+ signatures.get (0) + " \n" + signatures.get(1));
+        System.out.println ("Signatures Collected: \n" + signatures.get (0) + " \n" + signatures.get (1));
 
         int matrixSize = signatures.size ();
         double[][] resultsMatrix = new double[matrixSize][matrixSize];
 
         for (int col = 0; col < signatures.size (); col++) {
             for (int row = 0; row < signatures.size (); row++) {
-                //calculate similarity between features
-                resultsMatrix[row][col] = signatures.get (row).calculateSimilarity (signatures.get (col));
+                //calculate similarity between signatures
+                resultsMatrix[row][col] = signatures.get (row).calculateSimilarity(signatures.get (col));
             }
         }
         // print final result in result matrix

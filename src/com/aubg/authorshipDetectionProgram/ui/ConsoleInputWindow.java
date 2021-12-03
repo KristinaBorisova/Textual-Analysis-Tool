@@ -28,7 +28,7 @@ public class ConsoleInputWindow {
                 return UserAction.fileInput;
             }
             default -> {
-                System.out.println ("Error, please try again!");
+                System.out.println ("Invalid input, please try again!");
                 return getUserChoice ();
             }
         }

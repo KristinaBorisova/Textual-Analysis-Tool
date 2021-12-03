@@ -1,6 +1,7 @@
 package com.aubg.authorshipDetectionProgram.analyzer;
 
 import java.io.IOException;
+import java.util.Iterator;
 import java.util.LinkedHashMap;
 import java.util.Map;
 import java.util.regex.Matcher;
@@ -95,8 +96,20 @@ public class TextAnalyzerImpl implements TextAnalyzer {
         return wordsOccuranceMap;
     }
 
-
-
+    // Get the number of words occuring once
+    @Override
+    public double getNumberOfWordsOccuringOnce(String text) {
+        Map<String, Integer> wordsOccuranceMap = this.getWordsOccuranceMap (text);
+        int wordsOcurringOnce = 0;
+        Iterator var4 = wordsOccuranceMap.entrySet ().iterator ();
+        while (var4.hasNext ()) {
+            Map.Entry<String, Integer> mapEntry = (Map.Entry) var4.next ();
+            if ((Integer) mapEntry.getValue () == 1) {
+                ++wordsOcurringOnce;
+            }
+        }
+        return (double) wordsOcurringOnce;
+    }
 
 
 }

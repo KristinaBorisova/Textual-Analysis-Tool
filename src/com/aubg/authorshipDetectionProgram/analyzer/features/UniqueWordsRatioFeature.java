@@ -8,7 +8,7 @@ import java.io.IOException;
 
 public class UniqueWordsRatioFeature extends BaseFeature {
     TextAnalyzer textAnalyzer = new TextAnalyzerImpl ();
-    private static final double FEATURE_WEIGHT = 11;
+    private static final double FEATURE_WEIGHT = 33.0D;
     private static final SignatureFeature FEATURE_NAME = SignatureFeature.UNIQUE_WORDS_RATIO_FEATURE;
 
     @Override
@@ -27,7 +27,6 @@ public class UniqueWordsRatioFeature extends BaseFeature {
 
     @Override
     public double getFeatureValue(String content) throws IOException {
-        //TODO divide number of unique words by the total number of words in a sentence
         double wordsInText = textAnalyzer.getNumberOfWords (content);
         double uniqueWordsCounter = textAnalyzer.getNumberOfUniqueWords (content);
         return uniqueWordsCounter/wordsInText;
