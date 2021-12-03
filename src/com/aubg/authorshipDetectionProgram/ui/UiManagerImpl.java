@@ -52,6 +52,4 @@ public class UiManagerImpl implements UiManager {
 
     }
 
-
-
 }

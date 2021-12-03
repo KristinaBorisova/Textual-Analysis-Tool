@@ -25,6 +25,8 @@ public class ChooseFileWindow extends JComponent implements Accessible {
         String fileLocation = getFileLocationFromUi ();
         //get file content
         userFileContent = fileHelper.getContentFromFile (fileLocation);
+        // display filepath in console
+        msgManager.showFilePathMsg (new File (fileLocation));
         //print the content of the user file, formatted
         msgManager.printFileContent (userFileContent);
         return userFileContent;
@@ -37,8 +39,6 @@ public class ChooseFileWindow extends JComponent implements Accessible {
         if (fileChooser.showOpenDialog (null) == APPROVE_OPTION) {
             File file = fileChooser.getSelectedFile ();
             fileLocation = file.getAbsolutePath ();
-            msgManager.openingFileMsg(file);
-            msgManager.showFilePathMsg (file);
         }
         return fileLocation;
     }

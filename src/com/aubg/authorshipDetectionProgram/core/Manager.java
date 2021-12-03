@@ -74,7 +74,7 @@ public class Manager {
         for (int col = 0; col < signatures.size (); col++) {
             for (int row = 0; row < signatures.size (); row++) {
                 //calculate similarity between signatures
-                resultsMatrix[row][col] = signatures.get (row).calculateSimilarity (signatures.get (col));
+                resultsMatrix[row][col] = signatures.get (row).calculateSimilarity(signatures.get (col));
             }
         }
         // print final result in result matrix

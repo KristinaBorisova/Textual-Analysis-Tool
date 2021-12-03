@@ -16,4 +16,6 @@ public interface TextAnalyzer {
     double getNumberOfPhrases(String content) throws IOException;
 
     double getNumberOfUniqueWords(String content) throws IOException;
+
+    double getNumberOfWordsOccuringOnce(String text) throws IOException;
 }

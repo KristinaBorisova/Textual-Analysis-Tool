@@ -8,7 +8,7 @@ import java.io.IOException;
 
 public class SentenceComplexityFeature extends BaseFeature{
     TextAnalyzer textAnalyzer = new TextAnalyzerImpl ();
-    private static final double FEATURE_WEIGHT = 11;
+    private static final double FEATURE_WEIGHT = 11.0D;
     private static final SignatureFeature FEATURE_NAME = SignatureFeature.SENTENCE_COMPLEXITY_FEATURE;
 
     @Override

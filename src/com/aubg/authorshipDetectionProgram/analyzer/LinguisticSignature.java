@@ -51,6 +51,7 @@ public class LinguisticSignature {
     }
 
     public Double getFeatureValue(SignatureFeature feature) {
+
         for (Map.Entry<SignatureFeature, Double> signature : signatureValues.entrySet ()) {
             if (feature.name ().equals (signature.getKey ().name ())) {
                 return signature.getValue ();
