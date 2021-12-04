@@ -62,7 +62,7 @@ public class LinguisticSignature {
 
 
     public double calculateSimilarity(LinguisticSignature secondSignature) {
-        double finalResult = 0;
+        double finalResult = 0.D;
         //Similarity formula: The difference between two lingustic signatures' values, multiplied by their weight
         for (SignatureFeature feature : SignatureFeature.values ()) {
             double delta = Math.abs (getFeatureValue (feature) - secondSignature.getFeatureValue (feature));

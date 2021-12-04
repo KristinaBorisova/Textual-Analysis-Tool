@@ -17,6 +17,7 @@ public class UiManagerImpl implements UiManager {
 
     @Override
     public String[] getTextFromUser() throws IOException {
+        showGreetingMessage ();
         //Display option menu to user
         showUserActionMenu ();
         //get preferred user action
@@ -25,6 +26,11 @@ public class UiManagerImpl implements UiManager {
         String textValue[] = getText (usersChoice);
         return textValue;
     }
+
+    private void showGreetingMessage() {
+        msgManager.displayWelcomeMessage ();
+    }
+
 
     private void showUserActionMenu() {
         msgManager.displayMenu ();

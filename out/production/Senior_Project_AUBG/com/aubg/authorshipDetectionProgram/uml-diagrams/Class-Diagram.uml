@@ -8,8 +8,8 @@
     <node x="924.0" y="862.0">com.aubg.authorshipDetectionProgram.analyzer.utils.Features</node>
     <node x="1187.0" y="190.0">com.aubg.authorshipDetectionProgram.analyzer.features.AverageWordLengthFeature</node>
     <node x="935.0" y="190.0">com.aubg.authorshipDetectionProgram.analyzer.features.UniqueWordsRatioFeature</node>
-    <node x="0.0" y="571.0">com.aubg.authorshipDetectionProgram.ui.UiManagerImpl</node>
     <node x="667.0" y="190.0">com.aubg.authorshipDetectionProgram.analyzer.features.SentenceComplexityFeature</node>
+    <node x="0.0" y="571.0">com.aubg.authorshipDetectionProgram.ui.UiManagerImpl</node>
     <node x="912.0" y="467.0">com.aubg.authorshipDetectionProgram.core.FeaturesCalculator</node>
     <node x="912.0" y="571.0">com.aubg.authorshipDetectionProgram.analyzer.utils.FeaturesCalculatorImpl</node>
     <node x="0.0" y="862.0">com.aubg.authorshipDetectionProgram.ui.ConsoleMessages</node>
@@ -36,15 +36,15 @@
       <point x="840.0" y="160.0" />
       <point x="-81.0" y="70.0" />
     </edge>
+    <edge source="com.aubg.authorshipDetectionProgram.analyzer.utils.FeaturesCalculatorImpl" target="com.aubg.authorshipDetectionProgram.core.FeaturesCalculator">
+      <point x="0.0" y="-69.0" />
+      <point x="0.0" y="27.0" />
+    </edge>
     <edge source="com.aubg.authorshipDetectionProgram.analyzer.features.AverageWordLengthFeature" target="com.aubg.authorshipDetectionProgram.analyzer.features.BaseFeature">
       <point x="0.0" y="-113.0" />
       <point x="1307.0" y="160.0" />
       <point x="1002.0" y="160.0" />
       <point x="81.0" y="70.0" />
-    </edge>
-    <edge source="com.aubg.authorshipDetectionProgram.analyzer.utils.FeaturesCalculatorImpl" target="com.aubg.authorshipDetectionProgram.core.FeaturesCalculator">
-      <point x="0.0" y="-69.0" />
-      <point x="0.0" y="27.0" />
     </edge>
     <edge source="com.aubg.authorshipDetectionProgram.analyzer.features.SentenceComplexityFeature" target="com.aubg.authorshipDetectionProgram.analyzer.features.BaseFeature">
       <point x="0.0" y="-113.0" />
@@ -63,7 +63,7 @@
       <point x="0.0" y="27.0" />
     </edge>
   </edges>
-  <settings layout="Hierarchic Group" zoom="1.0204252088078967" x="713.5" y="638.5" />
+  <settings layout="Hierarchic Group" zoom="0.29506990434142755" x="713.5" y="669.4999999999999" />
   <SelectedNodes>
     <node>com.aubg.authorshipDetectionProgram.analyzer.TextAnalyzerImpl</node>
   </SelectedNodes>

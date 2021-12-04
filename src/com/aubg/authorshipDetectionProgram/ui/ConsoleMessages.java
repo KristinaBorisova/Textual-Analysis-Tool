@@ -10,6 +10,12 @@ public class ConsoleMessages {
         System.out.println (content);
     }
 
+    //Welcome Message
+    void displayWelcomeMessage(){
+        printMsg ("| Welcome to \"Grade Me\" - the tool for| \n" +
+                "| assessing digitally written work!   | \n");
+    }
+
     //show to the user existing options for text input
     void displayMenu() {
         printMsg ("Please choose how to proceed with Text Authentication:" +
