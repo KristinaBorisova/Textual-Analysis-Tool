@@ -1,48 +1,35 @@
 package com.aubg.authorshipDetectionProgram.ui;
 
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 import java.io.IOException;
 
 import static com.aubg.authorshipDetectionProgram.ui.UserAction.consoleInput;
 import static com.aubg.authorshipDetectionProgram.ui.UserAction.fileInput;
-import static org.junit.Assert.assertSame;
+import static org.junit.jupiter.api.Assertions.assertSame;
 
-public class UiManagerImplTest {
+class UiManagerImplTest {
     private ConsoleMessages msgManager;
     private UserAction userChoiceConsole = consoleInput;
     private UserAction userChoiceFile = fileInput;
 
+    @org.junit.jupiter.api.Test
+    void getTextFromUser() {
+    }
 
     @Test
-    public void getTextFromConsole() throws IOException {
+    public void testGetTextFromConsoleValidInput() throws IOException {
         String mockUserAction1 = "1";
         assertSame (mockUserAction1, consoleInput.getValue ());
     }
 
     @Test
-    public void getTextFromUserFile() throws IOException {
+    public void testgetTextFromUserFileValidInput() throws IOException {
         String mockUserAction2 = "2";
-        assertSame (mockUserAction2, fileInput.getValue ());
+       assertSame (mockUserAction2, fileInput.getValue ());
     }
 
-//    @Test
-//    public void getTextFromUser() {
-//    String [] userText = {"Object-Oriented Programming is...", "Object-Oriented Programmingis..."};
-//    UserAction usersChoice = consoleInput;
-//
-//    UiManager conClass = new UiManagerImpl();
-//    String actual = conClass.UiManagerImpl();
-//
-//    assertEquals("DEFAULT-1", actual);
-//
-//
-//    }
-
-//    @Test
-//    public void givenNonAbstractMethod_whenMockitoMock_testCorrectBehaviour() {
-//        UiManager abstractClass = Mockito.mock(AbstractIndependent.class, Mockito.CALLS_REAL_METHODS);
-//        assertEquals("DEFAULT-1", abstractClass.defaultImpl());
-//    }
-
+    @org.junit.jupiter.api.Test
+    void printResultsMatrix() {
+    }
 }

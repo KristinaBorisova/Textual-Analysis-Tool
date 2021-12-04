@@ -3,12 +3,11 @@
   <ID>JAVA</ID>
   <OriginalElement>com.aubg.authorshipDetectionProgram.ui</OriginalElement>
   <nodes>
-    <node x="0.0" y="0.0">com.aubg.authorshipDetectionProgram.ui.UserAction</node>
     <node x="261.0" y="374.0">com.aubg.authorshipDetectionProgram.ui.ConsoleMessages</node>
+    <node x="0.0" y="0.0">com.aubg.authorshipDetectionProgram.ui.UserAction</node>
     <node x="233.5" y="0.0">com.aubg.authorshipDetectionProgram.ui.UiManager</node>
     <node x="0.0" y="253.0">com.aubg.authorshipDetectionProgram.ui.ConsoleInputWindow</node>
     <node x="173.0" y="102.0">com.aubg.authorshipDetectionProgram.ui.UiManagerImpl</node>
-    <node x="0.0" y="374.0">com.aubg.authorshipDetectionProgram.ui.ChooseFileWindow</node>
   </nodes>
   <notes />
   <edges>
@@ -17,7 +16,7 @@
       <point x="0.0" y="26.0" />
     </edge>
   </edges>
-  <settings layout="Hierarchic Group" zoom="1.0" x="214.5" y="210.0" />
+  <settings layout="Hierarchic Group" zoom="1.0" x="214.5" y="213.0" />
   <SelectedNodes>
     <node>com.aubg.authorshipDetectionProgram.ui.ConsoleInputWindow</node>
   </SelectedNodes>
