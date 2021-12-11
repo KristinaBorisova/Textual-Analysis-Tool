@@ -38,7 +38,7 @@ public class LinguisticSignature {
     //For every single feature, get its default weight in order to use it for similarity calculations
     private Double getDefaultFeatureWeight(SignatureFeature featureAnalyzed) {
         Features feature = new Features ();
-        double featureWeight = 0;
+        double featureWeight = 0.0D;
 
         switch (featureAnalyzed) {
             case AVG_NUMBER_OF_WORDS_FEATURE -> featureWeight = feature.getFeature (SignatureFeature.AVG_NUMBER_OF_WORDS_FEATURE).getDefaultWeight ();
@@ -62,7 +62,7 @@ public class LinguisticSignature {
 
 
     public double calculateSimilarity(LinguisticSignature secondSignature) {
-        double finalResult = 0.D;
+        double finalResult = 0.0D;
         //Similarity formula: The difference between two lingustic signatures' values, multiplied by their weight
         for (SignatureFeature feature : SignatureFeature.values ()) {
             double delta = Math.abs (getFeatureValue (feature) - secondSignature.getFeatureValue (feature));

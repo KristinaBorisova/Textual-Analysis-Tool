@@ -9,7 +9,7 @@ import java.io.IOException;
 public class AverageNumberOfWordsFeature extends BaseFeature {
 
     TextAnalyzer textAnalyzer = new TextAnalyzerImpl ();
-    private static final double FEATURE_WEIGHT = 11D;
+    private static final double FEATURE_WEIGHT = 0.4D;
     private static final SignatureFeature FEATURE_NAME = SignatureFeature.AVG_NUMBER_OF_WORDS_FEATURE;
 
     @Override

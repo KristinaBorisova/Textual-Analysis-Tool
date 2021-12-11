@@ -82,7 +82,7 @@ public class ConsoleMessages {
     public void printFileContent(String[] arr) {
         printMsg ("File content: ");
         for (int i = 0; i < arr.length; i++) {
-            System.out.println (arr[i] + " ");
+            System.out.println (arr[i] + "\n\n");
             if (arr[i].equals (".") || arr[i].equals ("?") || arr[i].equals ("!")) {
                 System.out.println (arr[i] + "\n\n");
             }

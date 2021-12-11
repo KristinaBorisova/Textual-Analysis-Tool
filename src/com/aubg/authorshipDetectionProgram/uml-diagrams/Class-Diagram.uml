@@ -3,69 +3,383 @@
   <ID>JAVA</ID>
   <OriginalElement>com.aubg.authorshipDetectionProgram.ui.UiManager</OriginalElement>
   <nodes>
-    <node x="542.0" y="1137.0">com.aubg.authorshipDetectionProgram.Main</node>
-    <node x="278.0" y="862.0">com.aubg.authorshipDetectionProgram.analyzer.SignatureFeature</node>
-    <node x="924.0" y="862.0">com.aubg.authorshipDetectionProgram.analyzer.utils.Features</node>
-    <node x="1187.0" y="190.0">com.aubg.authorshipDetectionProgram.analyzer.features.AverageWordLengthFeature</node>
-    <node x="935.0" y="190.0">com.aubg.authorshipDetectionProgram.analyzer.features.UniqueWordsRatioFeature</node>
-    <node x="667.0" y="190.0">com.aubg.authorshipDetectionProgram.analyzer.features.SentenceComplexityFeature</node>
-    <node x="0.0" y="571.0">com.aubg.authorshipDetectionProgram.ui.UiManagerImpl</node>
-    <node x="912.0" y="467.0">com.aubg.authorshipDetectionProgram.core.FeaturesCalculator</node>
-    <node x="912.0" y="571.0">com.aubg.authorshipDetectionProgram.analyzer.utils.FeaturesCalculatorImpl</node>
-    <node x="0.0" y="862.0">com.aubg.authorshipDetectionProgram.ui.ConsoleMessages</node>
-    <node x="261.0" y="1137.0">com.aubg.authorshipDetectionProgram.ui.fileInput.FileHelper</node>
-    <node x="286.0" y="467.0">com.aubg.authorshipDetectionProgram.core.Manager</node>
-    <node x="47.0" y="467.0">com.aubg.authorshipDetectionProgram.ui.UiManager</node>
-    <node x="813.0" y="0.0">com.aubg.authorshipDetectionProgram.analyzer.features.BaseFeature</node>
-    <node x="633.0" y="467.0">com.aubg.authorshipDetectionProgram.ui.ConsoleInputWindow</node>
-    <node x="542.0" y="862.0">com.aubg.authorshipDetectionProgram.analyzer.LinguisticSignature</node>
-    <node x="0.0" y="214.0">com.aubg.authorshipDetectionProgram.analyzer.TextAnalyzerImpl</node>
-    <node x="383.0" y="190.0">com.aubg.authorshipDetectionProgram.analyzer.features.AverageNumberOfWordsFeature</node>
-    <node x="31.5" y="0.0">com.aubg.authorshipDetectionProgram.analyzer.TextAnalyzer</node>
-    <node x="0.0" y="1137.0">com.aubg.authorshipDetectionProgram.ui.fileInput.ChooseFileWindow</node>
+    <node x="1757.3125" y="2660.0">com.aubg.authorshipDetectionProgram.Main</node>
+    <node x="1247.6308641975302" y="1072.0">com.aubg.authorshipDetectionProgram.analyzer.utils.Features</node>
+    <node x="1569.7900077160489" y="1.0">com.aubg.authorshipDetectionProgram.analyzer.SignatureFeature</node>
+    <node x="2300.9900077160487" y="686.0">com.aubg.authorshipDetectionProgram.analyzer.features.AverageWordLengthFeature</node>
+    <node x="1994.6308641975302" y="686.0">com.aubg.authorshipDetectionProgram.analyzer.features.UniqueWordsRatioFeature</node>
+    <node x="160.15374228395058" y="1950.0">com.aubg.authorshipDetectionProgram.ui.UiManagerImpl</node>
+    <node x="1406.1308641975302" y="686.0">com.aubg.authorshipDetectionProgram.analyzer.features.SentenceComplexityFeature</node>
+    <node x="864.6966435185187" y="1762.0">com.aubg.authorshipDetectionProgram.core.FeaturesCalculator</node>
+    <node x="1132.1537422839506" y="2026.0">com.aubg.authorshipDetectionProgram.analyzer.utils.FeaturesCalculatorImpl</node>
+    <node x="272.390007716049" y="982.0">com.aubg.authorshipDetectionProgram.ui.ConsoleMessages</node>
+    <node x="266.0" y="1488.0">com.aubg.authorshipDetectionProgram.ui.fileInput.FileHelper</node>
+    <node x="1681.3125" y="2340.0">com.aubg.authorshipDetectionProgram.core.Manager</node>
+    <node x="591.6966435185187" y="1741.0">com.aubg.authorshipDetectionProgram.ui.UiManager</node>
+    <node x="1265.3808641975302" y="361.0">com.aubg.authorshipDetectionProgram.analyzer.features.BaseFeature</node>
+    <node x="0.0" y="1392.0">com.aubg.authorshipDetectionProgram.ui.ConsoleInputWindow</node>
+    <node x="869.3183641975303" y="1401.0">com.aubg.authorshipDetectionProgram.analyzer.LinguisticSignature</node>
+    <node x="2105.5716435185186" y="316.0">com.aubg.authorshipDetectionProgram.analyzer.TextAnalyzerImpl</node>
+    <node x="1674.1308641975302" y="686.0">com.aubg.authorshipDetectionProgram.analyzer.features.AverageNumberOfWordsFeature</node>
+    <node x="2088.140007716049" y="0.0">com.aubg.authorshipDetectionProgram.analyzer.TextAnalyzer</node>
+    <node x="355.6966435185186" y="1688.0">com.aubg.authorshipDetectionProgram.ui.fileInput.ChooseFileWindow</node>
   </nodes>
   <notes />
   <edges>
-    <edge source="com.aubg.authorshipDetectionProgram.analyzer.TextAnalyzerImpl" target="com.aubg.authorshipDetectionProgram.analyzer.TextAnalyzer">
-      <point x="0.0" y="-104.0" />
-      <point x="0.0" y="82.0" />
+    <edge source="com.aubg.authorshipDetectionProgram.analyzer.features.AverageWordLengthFeature" target="com.aubg.authorshipDetectionProgram.analyzer.TextAnalyzer">
+      <point x="96.0" y="-113.0" />
+      <point x="2516.9900077160487" y="666.0" />
+      <point x="2490.0662422839505" y="666.0" />
+      <point x="2490.0662422839505" y="216.0" />
+      <point x="2322.140007716049" y="216.0" />
+      <point x="78.0" y="93.0" />
     </edge>
-    <edge source="com.aubg.authorshipDetectionProgram.analyzer.features.AverageNumberOfWordsFeature" target="com.aubg.authorshipDetectionProgram.analyzer.features.BaseFeature">
-      <point x="0.0" y="-113.0" />
-      <point x="515.0" y="160.0" />
-      <point x="840.0" y="160.0" />
-      <point x="-81.0" y="70.0" />
+    <edge source="com.aubg.authorshipDetectionProgram.ui.fileInput.ChooseFileWindow" target="com.aubg.authorshipDetectionProgram.ui.ConsoleMessages">
+      <point x="27.0" y="-101.0" />
+      <point x="490.6966435185186" y="1668.0" />
+      <point x="512.5" y="1668.0" />
+      <point x="512.5" y="1372.0" />
+      <point x="403.452507716049" y="1372.0" />
+      <point x="14.5625" y="170.0" />
     </edge>
-    <edge source="com.aubg.authorshipDetectionProgram.analyzer.utils.FeaturesCalculatorImpl" target="com.aubg.authorshipDetectionProgram.core.FeaturesCalculator">
-      <point x="0.0" y="-69.0" />
-      <point x="0.0" y="27.0" />
+    <edge source="com.aubg.authorshipDetectionProgram.analyzer.features.AverageWordLengthFeature" target="com.aubg.authorshipDetectionProgram.analyzer.TextAnalyzerImpl">
+      <point x="-48.0" y="-113.0" />
+      <point x="2372.9900077160487" y="636.0" />
+      <point x="2342.1716435185185" y="636.0" />
+      <point x="67.59999999999991" y="115.0" />
     </edge>
-    <edge source="com.aubg.authorshipDetectionProgram.analyzer.features.AverageWordLengthFeature" target="com.aubg.authorshipDetectionProgram.analyzer.features.BaseFeature">
-      <point x="0.0" y="-113.0" />
-      <point x="1307.0" y="160.0" />
-      <point x="1002.0" y="160.0" />
-      <point x="81.0" y="70.0" />
+    <edge source="com.aubg.authorshipDetectionProgram.analyzer.LinguisticSignature" target="com.aubg.authorshipDetectionProgram.analyzer.SignatureFeature">
+      <point x="-28.083333333333258" y="-114.0" />
+      <point x="1009.735030864197" y="1372.0" />
+      <point x="1046.5695987654317" y="1372.0" />
+      <point x="1046.5695987654317" y="226.0" />
+      <point x="1578.9150077160489" y="226.0" />
+      <point x="-100.375" y="92.0" />
     </edge>
-    <edge source="com.aubg.authorshipDetectionProgram.analyzer.features.SentenceComplexityFeature" target="com.aubg.authorshipDetectionProgram.analyzer.features.BaseFeature">
-      <point x="0.0" y="-113.0" />
-      <point x="791.0" y="170.0" />
-      <point x="894.0" y="170.0" />
-      <point x="-27.0" y="70.0" />
+    <edge source="com.aubg.authorshipDetectionProgram.core.Manager" target="com.aubg.authorshipDetectionProgram.analyzer.LinguisticSignature">
+      <point x="-100.66666666666652" y="-135.0" />
+      <point x="1731.6458333333335" y="2300.0" />
+      <point x="854.1966435185187" y="2300.0" />
+      <point x="854.1966435185187" y="1668.0" />
+      <point x="911.4433641975303" y="1668.0" />
+      <point x="-126.375" y="114.0" />
     </edge>
-    <edge source="com.aubg.authorshipDetectionProgram.analyzer.features.UniqueWordsRatioFeature" target="com.aubg.authorshipDetectionProgram.analyzer.features.BaseFeature">
-      <point x="0.0" y="-113.0" />
-      <point x="1051.0" y="170.0" />
-      <point x="948.0" y="170.0" />
-      <point x="27.0" y="70.0" />
+    <edge source="com.aubg.authorshipDetectionProgram.core.Manager" target="com.aubg.authorshipDetectionProgram.analyzer.features.UniqueWordsRatioFeature">
+      <point x="60.40000000000009" y="-135.0" />
+      <point x="1892.7125" y="2280.0" />
+      <point x="2126.7662422839503" y="2280.0" />
+      <point x="2126.7662422839503" y="952.0" />
+      <point x="2187.9641975308637" y="952.0" />
+      <point x="77.33333333333348" y="113.0" />
     </edge>
     <edge source="com.aubg.authorshipDetectionProgram.ui.UiManagerImpl" target="com.aubg.authorshipDetectionProgram.ui.UiManager">
-      <point x="0.0" y="-123.0" />
-      <point x="0.0" y="27.0" />
+      <point x="108.0" y="-145.0" />
+      <point x="394.1537422839506" y="1930.0" />
+      <point x="654.6966435185187" y="1930.0" />
+      <point x="-63.0" y="48.0" />
+    </edge>
+    <edge source="com.aubg.authorshipDetectionProgram.analyzer.features.UniqueWordsRatioFeature" target="com.aubg.authorshipDetectionProgram.analyzer.SignatureFeature">
+      <point x="-46.40000000000009" y="-113.0" />
+      <point x="2064.23086419753" y="586.0" />
+      <point x="1933.3125" y="586.0" />
+      <point x="1933.3125" y="256.0" />
+      <point x="1724.9150077160489" y="256.0" />
+      <point x="45.625" y="92.0" />
+    </edge>
+    <edge source="com.aubg.authorshipDetectionProgram.analyzer.features.SentenceComplexityFeature" target="com.aubg.authorshipDetectionProgram.analyzer.TextAnalyzerImpl">
+      <point x="99.20000000000005" y="-113.0" />
+      <point x="1629.3308641975304" y="616.0" />
+      <point x="2139.371643518519" y="616.0" />
+      <point x="-135.19999999999982" y="115.0" />
+    </edge>
+    <edge source="com.aubg.authorshipDetectionProgram.analyzer.TextAnalyzerImpl" target="com.aubg.authorshipDetectionProgram.analyzer.TextAnalyzer">
+      <point x="0.0" y="-115.0" />
+      <point x="2274.5716435185186" y="296.0" />
+      <point x="2218.140007716049" y="296.0" />
+      <point x="-26.0" y="93.0" />
+    </edge>
+    <edge source="com.aubg.authorshipDetectionProgram.analyzer.utils.FeaturesCalculatorImpl" target="com.aubg.authorshipDetectionProgram.analyzer.LinguisticSignature">
+      <point x="-75.75" y="-69.0" />
+      <point x="1207.9037422839506" y="1930.0" />
+      <point x="1178.1966435185186" y="1930.0" />
+      <point x="1178.1966435185186" y="1668.0" />
+      <point x="1079.9433641975302" y="1668.0" />
+      <point x="42.125" y="114.0" />
+    </edge>
+    <edge source="com.aubg.authorshipDetectionProgram.analyzer.features.SentenceComplexityFeature" target="com.aubg.authorshipDetectionProgram.analyzer.TextAnalyzer">
+      <point x="49.59999999999991" y="-113.0" />
+      <point x="1579.73086419753" y="666.0" />
+      <point x="1563.4662422839506" y="666.0" />
+      <point x="1563.4662422839506" y="286.0" />
+      <point x="2114.140007716049" y="286.0" />
+      <point x="-130.0" y="93.0" />
+    </edge>
+    <edge source="com.aubg.authorshipDetectionProgram.analyzer.utils.FeaturesCalculatorImpl" target="com.aubg.authorshipDetectionProgram.core.FeaturesCalculator">
+      <point x="-126.25" y="-69.0" />
+      <point x="1157.4037422839506" y="1930.0" />
+      <point x="1091.9466435185188" y="1930.0" />
+      <point x="75.75000000000011" y="27.0" />
+    </edge>
+    <edge source="com.aubg.authorshipDetectionProgram.analyzer.features.UniqueWordsRatioFeature" target="com.aubg.authorshipDetectionProgram.analyzer.features.BaseFeature">
+      <point x="-92.80000000000018" y="-113.0" />
+      <point x="2017.83086419753" y="596.0" />
+      <point x="1440.8808641975302" y="596.0" />
+      <point x="67.5" y="70.0" />
+    </edge>
+    <edge source="com.aubg.authorshipDetectionProgram.analyzer.utils.FeaturesCalculatorImpl" target="com.aubg.authorshipDetectionProgram.analyzer.features.BaseFeature">
+      <point x="25.25" y="-69.0" />
+      <point x="1308.9037422839506" y="1910.0" />
+      <point x="1237.1308641975302" y="1910.0" />
+      <point x="1237.1308641975302" y="666.0" />
+      <point x="1278.8808641975302" y="666.0" />
+      <point x="-94.5" y="70.0" />
+    </edge>
+    <edge source="com.aubg.authorshipDetectionProgram.ui.fileInput.ChooseFileWindow" target="com.aubg.authorshipDetectionProgram.ui.fileInput.FileHelper">
+      <point x="-27.0" y="-101.0" />
+      <point x="436.6966435185186" y="1668.0" />
+      <point x="443.0" y="1668.0" />
+      <point x="59.0" y="27.0" />
+    </edge>
+    <edge source="com.aubg.authorshipDetectionProgram.core.Manager" target="com.aubg.authorshipDetectionProgram.analyzer.utils.FeaturesCalculatorImpl">
+      <point x="-60.399999999999864" y="-135.0" />
+      <point x="1771.9125000000001" y="2280.0" />
+      <point x="1283.6537422839506" y="2280.0" />
+      <point x="0.0" y="69.0" />
+    </edge>
+    <edge source="com.aubg.authorshipDetectionProgram.core.Manager" target="com.aubg.authorshipDetectionProgram.core.FeaturesCalculator">
+      <point x="-80.5333333333333" y="-135.0" />
+      <point x="1751.7791666666667" y="2290.0" />
+      <point x="940.4466435185187" y="2290.0" />
+      <point x="-75.75" y="27.0" />
+    </edge>
+    <edge source="com.aubg.authorshipDetectionProgram.analyzer.features.AverageNumberOfWordsFeature" target="com.aubg.authorshipDetectionProgram.analyzer.SignatureFeature">
+      <point x="-52.799999999999955" y="-113.0" />
+      <point x="1753.3308641975304" y="606.0" />
+      <point x="1776.9716435185187" y="606.0" />
+      <point x="1776.9716435185187" y="276.0" />
+      <point x="1688.4150077160489" y="276.0" />
+      <point x="9.125" y="92.0" />
+    </edge>
+    <edge source="com.aubg.authorshipDetectionProgram.core.Manager" target="com.aubg.authorshipDetectionProgram.ui.UiManagerImpl">
+      <point x="-140.9333333333334" y="-135.0" />
+      <point x="1691.3791666666666" y="2320.0" />
+      <point x="286.1537422839506" y="2320.0" />
+      <point x="0.0" y="145.0" />
+    </edge>
+    <edge source="com.aubg.authorshipDetectionProgram.analyzer.features.SentenceComplexityFeature" target="com.aubg.authorshipDetectionProgram.analyzer.features.BaseFeature">
+      <point x="-99.20000000000005" y="-113.0" />
+      <point x="1430.9308641975304" y="666.0" />
+      <point x="1386.8808641975302" y="666.0" />
+      <point x="13.5" y="70.0" />
+    </edge>
+    <edge source="com.aubg.authorshipDetectionProgram.analyzer.utils.Features" target="com.aubg.authorshipDetectionProgram.analyzer.features.AverageNumberOfWordsFeature">
+      <point x="51.0" y="-80.0" />
+      <point x="1434.6308641975302" y="942.0" />
+      <point x="1718.1308641975302" y="942.0" />
+      <point x="-88.0" y="113.0" />
+    </edge>
+    <edge source="com.aubg.authorshipDetectionProgram.core.Manager" target="com.aubg.authorshipDetectionProgram.analyzer.features.AverageNumberOfWordsFeature">
+      <point x="20.13333333333344" y="-135.0" />
+      <point x="1852.4458333333334" y="2320.0" />
+      <point x="1858.7662422839503" y="2320.0" />
+      <point x="1858.7662422839503" y="942.0" />
+      <point x="1894.1308641975302" y="942.0" />
+      <point x="88.0" y="113.0" />
+    </edge>
+    <edge source="com.aubg.authorshipDetectionProgram.ui.UiManagerImpl" target="com.aubg.authorshipDetectionProgram.ui.ConsoleInputWindow">
+      <point x="-108.0" y="-145.0" />
+      <point x="178.15374228395058" y="1930.0" />
+      <point x="111.5" y="1930.0" />
+      <point x="111.5" y="1668.0" />
+      <point x="58.5" y="1668.0" />
+      <point x="-58.5" y="123.0" />
+    </edge>
+    <edge source="com.aubg.authorshipDetectionProgram.analyzer.features.UniqueWordsRatioFeature" target="com.aubg.authorshipDetectionProgram.analyzer.TextAnalyzer">
+      <point x="92.80000000000018" y="-113.0" />
+      <point x="2203.4308641975304" y="646.0" />
+      <point x="2454.0716435185186" y="646.0" />
+      <point x="2454.0716435185186" y="286.0" />
+      <point x="2270.140007716049" y="286.0" />
+      <point x="26.0" y="93.0" />
+    </edge>
+    <edge source="com.aubg.authorshipDetectionProgram.ui.UiManagerImpl" target="com.aubg.authorshipDetectionProgram.ui.ConsoleMessages">
+      <point x="0.0" y="-145.0" />
+      <point x="286.1537422839506" y="1930.0" />
+      <point x="255.5" y="1930.0" />
+      <point x="255.5" y="1372.0" />
+      <point x="374.327507716049" y="1372.0" />
+      <point x="-14.5625" y="170.0" />
+    </edge>
+    <edge source="com.aubg.authorshipDetectionProgram.analyzer.utils.Features" target="com.aubg.authorshipDetectionProgram.analyzer.features.UniqueWordsRatioFeature">
+      <point x="85.0" y="-80.0" />
+      <point x="1468.6308641975302" y="952.0" />
+      <point x="2033.2975308641967" y="952.0" />
+      <point x="-77.33333333333348" y="113.0" />
+    </edge>
+    <edge source="com.aubg.authorshipDetectionProgram.analyzer.features.AverageWordLengthFeature" target="com.aubg.authorshipDetectionProgram.analyzer.SignatureFeature">
+      <point x="0.0" y="-113.0" />
+      <point x="2420.9900077160487" y="656.0" />
+      <point x="2465.0716435185186" y="656.0" />
+      <point x="2465.0716435185186" y="236.0" />
+      <point x="1761.4150077160489" y="236.0" />
+      <point x="82.125" y="92.0" />
+    </edge>
+    <edge source="com.aubg.authorshipDetectionProgram.analyzer.features.UniqueWordsRatioFeature" target="com.aubg.authorshipDetectionProgram.analyzer.TextAnalyzerImpl">
+      <point x="46.40000000000009" y="-113.0" />
+      <point x="2157.0308641975303" y="636.0" />
+      <point x="2274.5716435185186" y="636.0" />
+      <point x="0.0" y="115.0" />
+    </edge>
+    <edge source="com.aubg.authorshipDetectionProgram.analyzer.LinguisticSignature" target="com.aubg.authorshipDetectionProgram.ui.ConsoleMessages">
+      <point x="-84.25" y="-114.0" />
+      <point x="953.5683641975303" y="1342.0" />
+      <point x="490.827507716049" y="1342.0" />
+      <point x="101.9375" y="170.0" />
+    </edge>
+    <edge source="com.aubg.authorshipDetectionProgram.analyzer.features.BaseFeature" target="com.aubg.authorshipDetectionProgram.analyzer.SignatureFeature">
+      <point x="0.0" y="-70.0" />
+      <point x="1373.3808641975302" y="256.0" />
+      <point x="1633.6650077160489" y="256.0" />
+      <point x="-45.625" y="92.0" />
+    </edge>
+    <edge source="com.aubg.authorshipDetectionProgram.analyzer.features.AverageNumberOfWordsFeature" target="com.aubg.authorshipDetectionProgram.analyzer.features.BaseFeature">
+      <point x="-105.59999999999991" y="-113.0" />
+      <point x="1700.5308641975303" y="606.0" />
+      <point x="1413.8808641975302" y="606.0" />
+      <point x="40.5" y="70.0" />
+    </edge>
+    <edge source="com.aubg.authorshipDetectionProgram.core.FeaturesCalculator" target="com.aubg.authorshipDetectionProgram.analyzer.LinguisticSignature">
+      <point x="1.1368683772161603E-13" y="-27.0" />
+      <point x="1016.1966435185188" y="1668.0" />
+      <point x="995.6933641975303" y="1668.0" />
+      <point x="-42.125" y="114.0" />
+    </edge>
+    <edge source="com.aubg.authorshipDetectionProgram.analyzer.utils.FeaturesCalculatorImpl" target="com.aubg.authorshipDetectionProgram.analyzer.utils.Features">
+      <point x="126.25" y="-69.0" />
+      <point x="1409.9037422839506" y="1930.0" />
+      <point x="1459.7162422839506" y="1930.0" />
+      <point x="1459.7162422839506" y="1372.0" />
+      <point x="1485.6308641975302" y="1372.0" />
+      <point x="102.0" y="80.0" />
+    </edge>
+    <edge source="com.aubg.authorshipDetectionProgram.analyzer.utils.Features" target="com.aubg.authorshipDetectionProgram.analyzer.features.SentenceComplexityFeature">
+      <point x="17.0" y="-80.0" />
+      <point x="1400.6308641975302" y="932.0" />
+      <point x="1447.4641975308637" y="932.0" />
+      <point x="-82.66666666666674" y="113.0" />
+    </edge>
+    <edge source="com.aubg.authorshipDetectionProgram.ui.UiManagerImpl" target="com.aubg.authorshipDetectionProgram.ui.fileInput.ChooseFileWindow">
+      <point x="72.0" y="-145.0" />
+      <point x="358.1537422839506" y="1920.0" />
+      <point x="517.6966435185186" y="1920.0" />
+      <point x="54.0" y="101.0" />
+    </edge>
+    <edge source="com.aubg.authorshipDetectionProgram.ui.ConsoleInputWindow" target="com.aubg.authorshipDetectionProgram.ui.ConsoleMessages">
+      <point x="-58.5" y="-123.0" />
+      <point x="58.5" y="1342.0" />
+      <point x="286.952507716049" y="1342.0" />
+      <point x="-101.9375" y="170.0" />
+    </edge>
+    <edge source="com.aubg.authorshipDetectionProgram.Main" target="com.aubg.authorshipDetectionProgram.core.Manager">
+      <point x="0.0" y="-27.0" />
+      <point x="0.0" y="135.0" />
+    </edge>
+    <edge source="com.aubg.authorshipDetectionProgram.core.Manager" target="com.aubg.authorshipDetectionProgram.analyzer.features.AverageWordLengthFeature">
+      <point x="80.5333333333333" y="-135.0" />
+      <point x="1912.8458333333333" y="2290.0" />
+      <point x="2420.9900077160487" y="2290.0" />
+      <point x="0.0" y="113.0" />
+    </edge>
+    <edge source="com.aubg.authorshipDetectionProgram.analyzer.utils.Features" target="com.aubg.authorshipDetectionProgram.analyzer.SignatureFeature">
+      <point x="-119.0" y="-80.0" />
+      <point x="1264.6308641975302" y="962.0" />
+      <point x="1254.8808641975302" y="962.0" />
+      <point x="1254.8808641975302" y="246.0" />
+      <point x="1615.4150077160489" y="246.0" />
+      <point x="-63.875" y="92.0" />
+    </edge>
+    <edge source="com.aubg.authorshipDetectionProgram.core.Manager" target="com.aubg.authorshipDetectionProgram.analyzer.TextAnalyzerImpl">
+      <point x="120.79999999999995" y="-135.0" />
+      <point x="1953.1125" y="2310.0" />
+      <point x="2551.4900077160487" y="2310.0" />
+      <point x="2551.4900077160487" y="636.0" />
+      <point x="2409.7716435185184" y="636.0" />
+      <point x="135.19999999999982" y="115.0" />
+    </edge>
+    <edge source="com.aubg.authorshipDetectionProgram.core.Manager" target="com.aubg.authorshipDetectionProgram.ui.UiManager">
+      <point x="-120.79999999999995" y="-135.0" />
+      <point x="1711.5125" y="2310.0" />
+      <point x="780.6966435185187" y="2310.0" />
+      <point x="63.0" y="48.0" />
+    </edge>
+    <edge source="com.aubg.authorshipDetectionProgram.analyzer.features.SentenceComplexityFeature" target="com.aubg.authorshipDetectionProgram.analyzer.SignatureFeature">
+      <point x="-49.59999999999991" y="-113.0" />
+      <point x="1480.5308641975303" y="666.0" />
+      <point x="1521.4308641975304" y="666.0" />
+      <point x="1521.4308641975304" y="266.0" />
+      <point x="1651.9150077160489" y="266.0" />
+      <point x="-27.375" y="92.0" />
+    </edge>
+    <edge source="com.aubg.authorshipDetectionProgram.analyzer.utils.Features" target="com.aubg.authorshipDetectionProgram.analyzer.features.BaseFeature">
+      <point x="-51.0" y="-80.0" />
+      <point x="1332.6308641975302" y="962.0" />
+      <point x="1326.9862654320987" y="962.0" />
+      <point x="1326.9862654320987" y="666.0" />
+      <point x="1332.8808641975302" y="666.0" />
+      <point x="-40.5" y="70.0" />
+    </edge>
+    <edge source="com.aubg.authorshipDetectionProgram.core.Manager" target="com.aubg.authorshipDetectionProgram.analyzer.TextAnalyzer">
+      <point x="140.9333333333334" y="-135.0" />
+      <point x="1973.2458333333334" y="2320.0" />
+      <point x="2609.5662422839505" y="2320.0" />
+      <point x="2609.5662422839505" y="206.0" />
+      <point x="2374.140007716049" y="206.0" />
+      <point x="130.0" y="93.0" />
+    </edge>
+    <edge source="com.aubg.authorshipDetectionProgram.core.Manager" target="com.aubg.authorshipDetectionProgram.analyzer.features.SentenceComplexityFeature">
+      <point x="-40.26666666666665" y="-135.0" />
+      <point x="1792.0458333333333" y="2270.0" />
+      <point x="1553.6458333333335" y="2270.0" />
+      <point x="1553.6458333333335" y="932.0" />
+      <point x="1530.1308641975302" y="932.0" />
+      <point x="0.0" y="113.0" />
+    </edge>
+    <edge source="com.aubg.authorshipDetectionProgram.analyzer.features.AverageNumberOfWordsFeature" target="com.aubg.authorshipDetectionProgram.analyzer.TextAnalyzerImpl">
+      <point x="105.59999999999991" y="-113.0" />
+      <point x="1911.73086419753" y="626.0" />
+      <point x="2206.9716435185187" y="626.0" />
+      <point x="-67.59999999999991" y="115.0" />
+    </edge>
+    <edge source="com.aubg.authorshipDetectionProgram.analyzer.features.AverageNumberOfWordsFeature" target="com.aubg.authorshipDetectionProgram.analyzer.TextAnalyzer">
+      <point x="52.799999999999955" y="-113.0" />
+      <point x="1858.9308641975304" y="606.0" />
+      <point x="1838.0308641975303" y="606.0" />
+      <point x="1838.0308641975303" y="296.0" />
+      <point x="2166.140007716049" y="296.0" />
+      <point x="-78.0" y="93.0" />
+    </edge>
+    <edge source="com.aubg.authorshipDetectionProgram.analyzer.utils.Features" target="com.aubg.authorshipDetectionProgram.analyzer.features.AverageWordLengthFeature">
+      <point x="119.0" y="-80.0" />
+      <point x="1502.6308641975302" y="962.0" />
+      <point x="2340.9900077160487" y="962.0" />
+      <point x="-80.0" y="113.0" />
+    </edge>
+    <edge source="com.aubg.authorshipDetectionProgram.analyzer.LinguisticSignature" target="com.aubg.authorshipDetectionProgram.analyzer.utils.Features">
+      <point x="140.41666666666674" y="-114.0" />
+      <point x="1178.2350308641971" y="1372.0" />
+      <point x="1349.6308641975302" y="1372.0" />
+      <point x="-34.0" y="80.0" />
+    </edge>
+    <edge source="com.aubg.authorshipDetectionProgram.analyzer.features.AverageWordLengthFeature" target="com.aubg.authorshipDetectionProgram.analyzer.features.BaseFeature">
+      <point x="-96.0" y="-113.0" />
+      <point x="2324.9900077160487" y="566.0" />
+      <point x="1467.8808641975302" y="566.0" />
+      <point x="94.5" y="70.0" />
     </edge>
   </edges>
-  <settings layout="Hierarchic Group" zoom="0.29506990434142755" x="713.5" y="669.4999999999999" />
+  <settings layout="Hierarchic Group" zoom="0.6058350100603621" x="1606.361174458381" y="1719.2385974914482" />
   <SelectedNodes>
-    <node>com.aubg.authorshipDetectionProgram.analyzer.TextAnalyzerImpl</node>
+    <node>com.aubg.authorshipDetectionProgram.ui.UiManager</node>
   </SelectedNodes>
   <Categories>
     <Category>Fields</Category>

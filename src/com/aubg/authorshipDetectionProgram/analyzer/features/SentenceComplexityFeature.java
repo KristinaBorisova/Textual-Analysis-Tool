@@ -28,7 +28,7 @@ public class SentenceComplexityFeature extends BaseFeature{
 
     @Override
     public double getFeatureValue(String content) throws IOException {
-        //TODO find the value by dividing the number of phrases by the number of sentences
+        //find the value by dividing the number of phrases by the number of sentences
         double phrasesInText = textAnalyzer.getNumberOfPhrases (content);
         double sentencesCounter = textAnalyzer.getNumberOfSentences (content);
         return phrasesInText / sentencesCounter;
