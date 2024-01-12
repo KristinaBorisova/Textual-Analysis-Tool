@@ -1,4 +1,4 @@
-# Senior_Project_AUBG
+
 # Authorship and Plagiarism Detection Program
 
 **_About the project_**: 
